@@ -1,0 +1,16 @@
+mat-nav-list {
+  background: #fff;
+  height: auto;
+  margin: 0;
+  padding-top: 0;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+}

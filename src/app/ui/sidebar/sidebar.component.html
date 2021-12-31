@@ -1,0 +1,44 @@
+<mat-accordion multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Resume
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let card of resumeCards"
+                     routerLink="/" routerLinkActive="active" [fragment]="card.link_anchor">
+        {{card.nav_title}}
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Projects
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-nav-list> <!--
+      <mat-list-item>
+       <a href="https://ec2-3-213-161-64.compute-1.amazonaws.com/">ToDoListNg</a>
+      </mat-list-item>-->
+      <a href="http://ec2-54-197-187-148.compute-1.amazonaws.com/" target="_blank">
+        <mat-list-item>
+          Virtual Synthesizer
+        </mat-list-item>
+      </a>
+      <a href="https://share.streamlit.io/emapco/ca-covid-vaccination-dashboard" target="_blank">
+        <mat-list-item>
+          CA COVID-19
+          Dashboard
+        </mat-list-item>
+      </a>
+      <mat-list-item routerLink="/pathVisualizer" routerLinkActive="active">
+        Path Algorithm Visualizer
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</mat-accordion>
+<section class="bottom">
+  <p>&copy; Emmanuel Cortes {{currentYear}}</p>
+</section>

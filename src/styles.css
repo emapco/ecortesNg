@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p{
+  font-size: 18px;
+}
+
+mat-card-title {
+  font-size: 30px !important;
+}
+
+h1 {
+  font-size: 26px !important;
+}
+
+markdown {
+  font-size: 16px;
+  padding: 2em 0;
+}
+
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}

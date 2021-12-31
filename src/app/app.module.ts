@@ -1,16 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {SharedModule} from "./shared/shared.module";
+import {MarkdownService} from "ngx-markdown";
+import {UiModule} from "./ui/ui.module";
+import {PagesModule} from "./pages/pages.module";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    SharedModule,
+    UiModule,
+    PagesModule,
   ],
-  providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [MarkdownService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

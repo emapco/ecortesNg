@@ -1,0 +1,29 @@
+<mat-nav-list class="header">
+  <section>
+    <mat-list-item (click)="menuToggled.emit()">
+      <mat-icon>menu</mat-icon>
+    </mat-list-item>
+  </section>
+  <section>
+    <mat-list-item routerLink="" routerLinkActive="active">Emmanuel Cortes</mat-list-item>
+  </section>
+  <section class="right-side header">
+    <a href="https://www.linkedin.com/in/mannycortes/" title="LinkedIn">
+      <mat-list-item>
+        <img src="../../../assets/icons/linkedin.svg" alt="LinkedIn">
+      </mat-list-item>
+    </a>
+    <a href="https://github.com/emapco" title="GitHub">
+      <mat-list-item>
+        <img src="../../../assets/icons/github.svg" alt="GitHub">
+      </mat-list-item>
+    </a>
+    <!--
+    <mat-list-item (click)="toggleMode()">
+      <mat-icon *ngIf="lightMode">light_mode</mat-icon>
+      <mat-icon *ngIf="!lightMode">dark_mode</mat-icon>
+    </mat-list-item>
+    -->
+  </section>
+</mat-nav-list>
+<mat-divider></mat-divider>
