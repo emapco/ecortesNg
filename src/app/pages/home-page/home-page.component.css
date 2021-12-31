@@ -1,5 +1,4 @@
 mat-card {
-  margin: 12px 0;
   width: 60% !important;
 }
 
@@ -8,4 +7,9 @@ mat-card {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+img {
+  width: 20vw;
+  height: 20vh;
 }

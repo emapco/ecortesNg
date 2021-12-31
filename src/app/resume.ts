@@ -6,7 +6,7 @@ export interface ResumeCard {
 }
 
 let educationMD = `
-  **UC Berkeley (Berkeley, CA)**<br>
+  **UC Berkeley (Berkeley, CA)** <br>
   Bachelor of Science, Chemistry (Honors in General Scholarship)<br>
   Graduated May 2020<br>
   GPA: 3.807/4.000

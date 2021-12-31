@@ -1,0 +1,8 @@
+mat-card {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+mat-card-title, h2 {
+  align-self: center;
+}

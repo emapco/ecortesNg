@@ -16,7 +16,7 @@ const routes: Routes = [
     component: SynthPageComponent
   },
   {
-    path: 'pathVisualizer',
+    path: 'pathfindingVisualizer',
     component: PathVisualizerPageComponent
   },
   {

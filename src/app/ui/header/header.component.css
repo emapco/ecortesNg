@@ -14,3 +14,7 @@ mat-nav-list {
   position: absolute;
   right: 0;
 }
+
+mat-icon {
+  transform: scale(1);
+}

@@ -1,5 +1,5 @@
 <mat-card *ngFor="let card of resumeCards" [attr.id]="card.link_anchor">
-  <mat-card-title>{{card.title}}</mat-card-title>
+  <mat-card-title><u>{{card.title}}</u></mat-card-title>
   <mat-card-content>
     <markdown [data]="card.content"></markdown>
   </mat-card-content>

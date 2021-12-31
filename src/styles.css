@@ -11,16 +11,26 @@ mat-card-title {
   font-size: 30px !important;
 }
 
+mat-card {
+  margin: 12px 0;
+}
+
 h1 {
   font-size: 26px !important;
 }
 
-markdown {
+markdown p {
   font-size: 16px;
-  padding: 2em 0;
+  padding: 0 0 !important;
+  margin: 0 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 a:hover {
   color: #1976d2;
   text-decoration: none;
+}
+
+mat-icon {
+  transform: scale(.75);
 }

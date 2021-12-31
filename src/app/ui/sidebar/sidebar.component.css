@@ -9,14 +9,9 @@ mat-nav-list, mat-expansion-panel, mat-accordion {
   position: absolute;
   bottom: 0;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
 }
 
 p {
   font-size: 12px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
