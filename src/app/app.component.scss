@@ -9,23 +9,23 @@
 
 .sidenav {
   position: fixed;
-  z-index: -1;
 }
 
-.header {
+app-header {
   width: 100%;
   position: fixed;
   z-index: 101;
+  opacity: 1;
 }
 
-.sidenav, .app-container {
-  padding-top: 4.4vh;
+.app-container, .sidenav {
+  padding-top: 5vh;
+  min-height: 100vh;
 }
 
 .app-container {
   width: 100%;
-  min-height: calc(100vh - 6vh);
-  padding: 4em 0;
+  padding: 3.5em 0;
 }
 
 .content {
@@ -38,11 +38,3 @@
   justify-content: center;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (max-width: 575px) {
-
-}

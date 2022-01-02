@@ -1,9 +1,12 @@
-<app-header class="header" (menuToggled)="drawer.toggle()"></app-header>
-<mat-drawer-container class="app-container" autosize>
-  <mat-drawer #drawer opened mode="side" class="sidenav">
-    <app-sidebar></app-sidebar>
-  </mat-drawer>
-  <div class="content" role="main">
-    <router-outlet></router-outlet>
-  </div>
-</mat-drawer-container>
+<div [ngClass]="{'dark-theme': !lightMode}">
+  <app-header (menuToggled)="drawer.toggle()" [lightMode]="lightMode"
+              (lightModeToggled)="lightModeToggled($event)"></app-header>
+  <mat-drawer-container class="app-container" autosize>
+    <mat-drawer #drawer mode="side" class="sidenav">
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <div class="content" role="main">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</div>

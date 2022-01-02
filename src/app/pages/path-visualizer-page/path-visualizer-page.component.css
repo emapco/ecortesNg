@@ -1,7 +1,3 @@
-mat-card {
-  width: 100% !important;
-}
-
 :host {
   width: 70%;
 }
@@ -11,4 +7,8 @@ mat-card {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+img {
+  width: 65%;
 }

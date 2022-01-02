@@ -16,6 +16,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {LayoutModule} from "@angular/cdk/layout";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MarkdownModule} from "ngx-markdown";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {MarkdownModule} from "ngx-markdown";
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    LayoutModule,
     MatListModule,
     MatTreeModule,
     MatExpansionModule,
@@ -32,9 +34,9 @@ import {MarkdownModule} from "ngx-markdown";
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatTooltipModule,
     RoutingModule,
     MarkdownModule.forRoot(),
   ],
@@ -42,6 +44,7 @@ import {MarkdownModule} from "ngx-markdown";
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    LayoutModule,
     MatListModule,
     MatTreeModule,
     MatExpansionModule,
@@ -50,9 +53,9 @@ import {MarkdownModule} from "ngx-markdown";
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatTooltipModule,
     RoutingModule,
     MarkdownModule,
   ]

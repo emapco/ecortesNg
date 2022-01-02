@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 26px !important;
+}
+
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+@media only screen and (orientation: landscape) {
+  mat-card {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  mat-card {
+    width: 100% !important;
+  }
+}
+
+/**********************************
+  Markdown styles
+***********************************/
+markdown, markdown p {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+markdown p strong {
+  font-weight: 500;
+}
+
+markdown p {
+  padding: 0 0 !important;
+  margin: 0 0;
+}
+
+/**********************************
+  Material Angular Component styles
+***********************************/
+mat-expansion-panel-header {
+  height: 5vh !important;
+  margin: .5vh 0;
+}
+
+mat-card {
+     margin: 12px 0;
+}
+
+mat-icon {
+  transform: scale(.75);
+}

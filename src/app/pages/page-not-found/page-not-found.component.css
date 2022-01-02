@@ -1,8 +1,9 @@
 mat-card {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
 }
 
-mat-card-title, h2 {
-  align-self: center;
+:host {
+  height: 100%;
 }

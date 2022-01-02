@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ResumeCard, cards} from "../../resume";
+import {ResumeCard, cards} from "../resume";
 
 @Component({
   selector: 'app-home-page',

@@ -25,7 +25,7 @@ let skillsMD = `
 
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XPRD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
 
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, JavaScript, Typescript, Angular (framework)
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SASS, JavaScript, Typescript, Angular (framework)
   `
 let courseworkMD = `
   **Computer Science**:
@@ -88,12 +88,12 @@ let researchMD = `
   **Diverse Reactivity of a Rhenium(V) Oxo Imido Complex: [2 + 2] Cycloadditions, Chalcogen Metathesis, Oxygen Atom Transfer, and Protic and Hydridic 1,2-Additions** <br>
   Journal: Inorganic Chemistry <br>
   Date: July 14, 2020 <br>
-  DOI: https://doi.org/10.1021/acs.inorgchem.0c01589
+  DOI: [10.1021/acs.inorgchem.0c01589](https://doi.org/10.1021/acs.inorgchem.0c01589)
 
   **Facile Activation of Triarylboranes by Rhenium(V) Oxo Imido Complexes**  <br>
   Journal: Inorganic Chemistry <br>
   Date: April 27, 2020 <br>
-  DOI: https://doi.org/10.1021/acs.inorgchem.0c00658
+  DOI: [10.1021/acs.inorgchem.0c00658](https://doi.org/10.1021/acs.inorgchem.0c00658)
   `
 
 export const cards: ResumeCard[] = [
