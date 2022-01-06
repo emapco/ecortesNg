@@ -3,8 +3,8 @@
 
 $light-primary: mat.define-palette(mat.$indigo-palette, A900);
 $light-accent: mat.define-palette(mat.$indigo-palette, A200);
-$light-warn: mat.define-palette(mat.$red-palette);
+$light-warn: mat.define-palette(mat.$deep-orange-palette);
 
-$dark-primary: mat.define-palette(mat.$pink-palette, A200);
-$dark-accent: mat.define-palette(mat.$indigo-palette, A700);
+$dark-primary: mat.define-palette(mat.$indigo-palette, A900);
+$dark-accent: mat.define-palette(mat.$indigo-palette, A400);
 $dark-warn: mat.define-palette(mat.$deep-orange-palette);

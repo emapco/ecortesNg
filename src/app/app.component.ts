@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {CookiesService} from "./shared/cookies.service";
+import {CookiesService} from "./core/cookies.service";
+import {OverlayContainer} from "@angular/cdk/overlay";
 
 @Component({
   selector: 'app-root',
@@ -7,16 +8,24 @@ import {CookiesService} from "./shared/cookies.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  lightMode: boolean = false;
+  isLightMode: boolean = false;
 
-  constructor(private cookieService: CookiesService) {
-    this.lightMode = this.cookieService.getMode();
-    console.log(this.lightMode)
+  constructor(private cookieService: CookiesService,
+              private overlayContainer: OverlayContainer) {
+    this.lightModeToggled(this.cookieService.getMode());
   }
 
   lightModeToggled(status: boolean) {
-    this.lightMode = status;
-    this.cookieService.setMode(this.lightMode);
-    console.log(this.lightMode)
+    this.isLightMode = status;
+    this.cookieService.setMode(this.isLightMode);
+    // set overlay component (MatDialog) theme
+    const overlayContainerClasses = this.overlayContainer.getContainerElement().classList;
+    if (this.isLightMode) {
+      overlayContainerClasses.remove('dark-theme');
+      overlayContainerClasses.add('light-theme');
+    } else {
+      overlayContainerClasses.remove('light-theme');
+      overlayContainerClasses.add('dark-theme');
+    }
   }
 }
