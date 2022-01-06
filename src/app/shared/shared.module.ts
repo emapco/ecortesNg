@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {RoutingModule} from "./routing.module";
+import {LayoutModule} from "@angular/cdk/layout";
 
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
@@ -13,10 +13,14 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
-import {LayoutModule} from "@angular/cdk/layout";
+
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MarkdownModule} from "ngx-markdown";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatDialogModule} from "@angular/material/dialog";
+import {HttpClientModule} from "@angular/common/http"
+
+import {RoutingModule} from "./routing.module";
 
 
 @NgModule({
@@ -26,6 +30,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
+    HttpClientModule,
     MatListModule,
     MatTreeModule,
     MatExpansionModule,
@@ -37,6 +42,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatToolbarModule,
     MatSidenavModule,
     MatTooltipModule,
+    MatDialogModule,
     RoutingModule,
     MarkdownModule.forRoot(),
   ],
@@ -45,6 +51,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
+    HttpClientModule,
     MatListModule,
     MatTreeModule,
     MatExpansionModule,
@@ -56,6 +63,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatToolbarModule,
     MatSidenavModule,
     MatTooltipModule,
+    MatDialogModule,
     RoutingModule,
     MarkdownModule,
   ]

@@ -1,0 +1,30 @@
+<svg width="160px" height="112px"  viewBox="0 0 68 64" style="background-color: #ffffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 33.4742 44.3403)" style="font:normal normal normal 200px 'Arial'" >
+    Re</text>
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 15.1575 37.257)" style="font:normal normal normal 200px 'Arial'" >
+    N</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5481.73,899.318 L 5486.51,885.098 L 5637.94,935.939 L 5633.16,950.159 L 5481.73,899.318 Z " />
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 15.1575 54.257)" style="font:normal normal normal 200px 'Arial'" >
+    N</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5488.7,1150.71 L 5482.32,1137.14 L 5639.1,1063.44 L 5645.48,1077.02 L 5488.7,1150.71 Z " />
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 35.9766 23.7986)" style="font:normal normal normal 200px 'Arial'" >
+    O</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5841.79,882.973 L 5826.79,882.973 L 5826.79,698.139 L 5841.79,698.139 L 5841.79,882.973 Z " />
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5767.84,882.973 L 5752.84,882.973 L 5752.84,698.139 L 5767.84,698.139 L 5767.84,882.973 Z " />
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 36.2549 61.3403)" style="font:normal normal normal 200px 'Arial'" >
+    NPh</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5789.82,1108.97 L 5804.82,1108.97 L 5804.82,1222.97 L 5789.82,1222.97 L 5789.82,1108.97 Z " />
+  <path stroke="#000000" stroke-width="15" fill="transparent" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 5265,800.43 C 5146.39,800.43 5050.11,895.773 5050.11,1013.23 C 5050.11,1125.8 5151.33,1226.04 5265,1226.04 " />
+  <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 37.25 10.875)" style="font:normal normal bold 200px 'Arial'" >
+    3</text>
+  <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 55.4183 35.8403)" style="font:normal normal normal 200px 'Arial'" >
+    L</text>
+  <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 60.9798 37.4514)" style="font:normal normal normal 150px 'Arial'" >
+    1</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 6064.67,876.039 L 6072.17,889.029 L 5944.55,962.71 L 5937.05,949.72 L 6064.67,876.039 Z " />
+  <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 55.4183 52.8403)" style="font:normal normal normal 200px 'Arial'" >
+    L</text>
+  <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 60.9798 54.4514)" style="font:normal normal normal 150px 'Arial'" >
+    1</text>
+  <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -250 -9)" d="M 6069.67,1104.25 L 6062.17,1117.24 L 5953.6,1054.56 L 5961.1,1041.57 L 6069.67,1104.25 Z " />
+</svg>

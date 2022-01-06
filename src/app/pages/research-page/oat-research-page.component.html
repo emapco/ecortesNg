@@ -1,0 +1,1020 @@
+<mat-card>
+  <mat-card-title>Oxygen Atom Transfer</mat-card-title>
+  <mat-card-subtitle>Level of theory: DFT, CAM-B3LYP-D3BJ functional, mixed def2 basis set</mat-card-subtitle>
+  <mat-card-content>
+    <p>For this project, I worked with my graduate-student mentor, Trevor Lohrey, on employing DFT to model the reaction
+      mechanism of a unique reaction he uncovered. The reaction involved a CO or CNPh
+      ligand binding to the terminal oxo ligand (oxygen atom bound to the Rhenium atom in structure 1)
+      and then dissociating as CO<sub>2</sub> or OCNPh. Trevor's reactivity research on structure 1, was
+      used for modeling the reaction pathway.
+    </p>
+    <div class="img-container">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/oat1.svg">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/oat3.svg">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/oatTS1.svg">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/oat4.svg">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/oat6.svg">
+      <img alt="Complex with terminal oxo and imido ligands" src="../../../assets/structures/svg/legend.svg">
+    </div>
+    <br>
+    <p>We hypothesized that the oxygen transfer would involve a CO molecule binding to
+      the terminal oxo ligand forming a η<sub>2</sub>-CO<sub>2</sub> ligand
+      (η<sub>x</sub> means <i>x</i> amount of atoms are bound to the metal). However, after an
+      exhaustive search, such a transition state could not be found. We posit that the structure is
+      highly unfavorable hence the inability to isolate the transition state.
+    </p>
+    <p>
+      However, I was able to find a process in which the CO, first bound to the rhenium (3), then migrated and
+      associated with the oxo-ligand forming a η<sub>2</sub>-CO<sub>2</sub> transition state (TS1).
+      The transition state ultimately led to the intermediate depicted in structure 4.
+    </p>
+    <p>Next, I had to determine if the substitution of η<sub>2</sub>-CO<sub>2</sub> for CO was
+      favorable. Trevor and I determined that modeling both forms of substitution,
+      associative (CO binds first) and dissociative (η<sub>2</sub>-CO<sub>2</sub> is unbound first)
+      would suffice. Both processes were determined to be energetically favorable. However, the associative mechanism was
+      more favorable and thus depicted in the reaction coordinate below.
+    </p>
+    <p>The mechanism for CNPh was found to follow the same reaction pathway but more favorably than CO.
+      This is in agreement with Trevor's reactivity studies since, unlike the CO pathway, he was not able to isolate
+      intermediate products for the CNPh pathway.
+    </p>
+    <br>
+    <p>Below is the reaction mechanism that I modeled.
+      You can click on each structure's label to view its optimized geometry.<br>
+    Zoom in with scroll wheel (pinch on a touch screen).<br>
+    Rotate with left click and drag (touch and drag on a touch screen).<br>
+    Translate with middle mouse button and drag (touch and drag with three fingers on a touch screen).</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="https://pubs.acs.org/doi/10.1021/acs.inorgchem.0c01589" target="_blank">
+      <button mat-raised-button color="accent">Published Article
+        <mat-icon>launch</mat-icon>
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-card>
+
+<div class="mech">
+  <svg width="100%" height="100%" viewBox="0 0 633 330" style="background-color: #ffffffff"
+       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <!-- Legend text -->
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 44.3 26.25)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 49.8615 27.8611)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 54.0327 26.25)"
+          style="font:normal normal normal 200px 'Arial'">
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 56.811 26.25)"
+          style="font:normal normal normal 200px 'Arial'">
+      =
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 65.4291 26.25)"
+          style="font:normal normal normal 200px 'Arial'">
+      CO
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 44.3 39.125)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 49.8615 40.7361)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 54.0327 39.125)"
+          style="font:normal normal normal 200px 'Arial'">
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 56.811 39.125)"
+          style="font:normal normal normal 200px 'Arial'">
+      =
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 65.4291 39.125)"
+          style="font:normal normal normal 200px 'Arial'">
+      CNPh
+    </text>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,8828 L 712,8828 L 719.5,8835.5 L 719.5,9160.5 L 712,9168 L 704.5,9168 L 704.5,8828 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,8488 L 712,8488 L 719.5,8495.5 L 719.5,8820.5 L 712,8828 L 704.5,8828 L 704.5,8488 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,8148 L 712,8148 L 719.5,8155.5 L 719.5,8480.5 L 712,8488 L 704.5,8488 L 704.5,8148 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,7808 L 712,7808 L 719.5,7815.5 L 719.5,8140.5 L 712,8148 L 704.5,8148 L 704.5,7808 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,7468 L 712,7468 L 719.5,7475.5 L 719.5,7800.5 L 712,7808 L 704.5,7808 L 704.5,7468 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,7128 L 712,7128 L 719.5,7135.5 L 719.5,7460.5 L 712,7468 L 704.5,7468 L 704.5,7128 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,6788 L 712,6788 L 719.5,6795.5 L 719.5,7120.5 L 712,7128 L 704.5,7128 L 704.5,6788 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,6448 L 712,6448 L 719.5,6455.5 L 719.5,6780.5 L 712,6788 L 704.5,6788 L 704.5,6448 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,6108 L 712,6108 L 719.5,6115.5 L 719.5,6440.5 L 712,6448 L 704.5,6448 L 704.5,6108 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,5768 L 712,5768 L 719.5,5775.5 L 719.5,6100.5 L 712,6108 L 704.5,6108 L 704.5,5768 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,5428 L 712,5428 L 719.5,5435.5 L 719.5,5760.5 L 712,5768 L 704.5,5768 L 704.5,5428 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,5088 L 712,5088 L 719.5,5095.5 L 719.5,5420.5 L 712,5428 L 704.5,5428 L 704.5,5088 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,4748 L 712,4748 L 719.5,4755.5 L 719.5,5080.5 L 712,5088 L 704.5,5088 L 704.5,4748 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,4408 L 712,4408 L 719.5,4415.5 L 719.5,4740.5 L 712,4748 L 704.5,4748 L 704.5,4408 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,4068 L 712,4068 L 719.5,4075.5 L 719.5,4400.5 L 712,4408 L 704.5,4408 L 704.5,4068 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 719.5,9500.5 L 712,9508 L 704.5,9508 L 704.5,9168 L 712,9168 L 719.5,9175.5 L 719.5,9500.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 719.5,9840.5 L 704.5,9855.5 L 704.5,9508 L 712,9508 L 719.5,9515.5 L 719.5,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,9840.5 L 1052,9855.5 L 704.5,9855.5 L 719.5,9840.5 L 1052,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1392,9840.5 L 1392,9855.5 L 1052,9855.5 L 1052,9840.5 L 1392,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1732,9840.5 L 1732,9855.5 L 1392,9855.5 L 1392,9840.5 L 1732,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2072,9840.5 L 2072,9855.5 L 1732,9855.5 L 1732,9840.5 L 2072,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2412,9840.5 L 2412,9855.5 L 2072,9855.5 L 2072,9840.5 L 2412,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2752,9840.5 L 2752,9855.5 L 2412,9855.5 L 2412,9840.5 L 2752,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3092,9840.5 L 3092,9855.5 L 2752,9855.5 L 2752,9840.5 L 3092,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3432,9840.5 L 3432,9855.5 L 3092,9855.5 L 3092,9840.5 L 3432,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3772,9840.5 L 3772,9855.5 L 3432,9855.5 L 3432,9840.5 L 3772,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4112,9840.5 L 4112,9855.5 L 3772,9855.5 L 3772,9840.5 L 4112,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4452,9840.5 L 4452,9855.5 L 4112,9855.5 L 4112,9840.5 L 4452,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4792,9840.5 L 4792,9855.5 L 4452,9855.5 L 4452,9840.5 L 4792,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5132,9840.5 L 5132,9855.5 L 4792,9855.5 L 4792,9840.5 L 5132,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5472,9840.5 L 5472,9855.5 L 5132,9855.5 L 5132,9840.5 L 5472,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5812,9840.5 L 5812,9855.5 L 5472,9855.5 L 5472,9840.5 L 5812,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6152,9840.5 L 6152,9855.5 L 5812,9855.5 L 5812,9840.5 L 6152,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6492,9840.5 L 6492,9855.5 L 6152,9855.5 L 6152,9840.5 L 6492,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6832,9840.5 L 6832,9855.5 L 6492,9855.5 L 6492,9840.5 L 6832,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7172,9840.5 L 7172,9855.5 L 6832,9855.5 L 6832,9840.5 L 7172,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7512,9840.5 L 7512,9855.5 L 7172,9855.5 L 7172,9840.5 L 7512,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7852,9840.5 L 7852,9855.5 L 7512,9855.5 L 7512,9840.5 L 7852,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8192,9840.5 L 8192,9855.5 L 7852,9855.5 L 7852,9840.5 L 8192,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8532,9840.5 L 8532,9855.5 L 8192,9855.5 L 8192,9840.5 L 8532,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8872,9840.5 L 8872,9855.5 L 8532,9855.5 L 8532,9840.5 L 8872,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9212,9840.5 L 9212,9855.5 L 8872,9855.5 L 8872,9840.5 L 9212,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9552,9840.5 L 9552,9855.5 L 9212,9855.5 L 9212,9840.5 L 9552,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9892,9840.5 L 9892,9855.5 L 9552,9855.5 L 9552,9840.5 L 9892,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10232,9840.5 L 10232,9855.5 L 9892,9855.5 L 9892,9840.5 L 10232,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10572,9840.5 L 10572,9855.5 L 10232,9855.5 L 10232,9840.5 L 10572,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10912,9840.5 L 10912,9855.5 L 10572,9855.5 L 10572,9840.5 L 10912,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11252,9840.5 L 11252,9855.5 L 10912,9855.5 L 10912,9840.5 L 11252,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11592,9840.5 L 11592,9855.5 L 11252,9855.5 L 11252,9840.5 L 11592,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11932,9840.5 L 11932,9855.5 L 11592,9855.5 L 11592,9840.5 L 11932,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12272,9840.5 L 12272,9855.5 L 11932,9855.5 L 11932,9840.5 L 12272,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12612,9840.5 L 12612,9855.5 L 12272,9855.5 L 12272,9840.5 L 12612,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12952,9840.5 L 12952,9855.5 L 12612,9855.5 L 12612,9840.5 L 12952,9840.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 704.5,3720.5 L 719.5,3735.5 L 719.5,4060.5 L 712,4068 L 704.5,4068 L 704.5,3720.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,6100.5 L 1052,6115.5 L 719.5,6115.5 L 712,6108 L 719.5,6100.5 L 1052,6100.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,6440.5 L 1052,6455.5 L 719.5,6455.5 L 712,6448 L 719.5,6440.5 L 1052,6440.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,6780.5 L 1052,6795.5 L 719.5,6795.5 L 712,6788 L 719.5,6780.5 L 1052,6780.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,7120.5 L 1052,7135.5 L 719.5,7135.5 L 712,7128 L 719.5,7120.5 L 1052,7120.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,7460.5 L 1052,7475.5 L 719.5,7475.5 L 712,7468 L 719.5,7460.5 L 1052,7460.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,7800.5 L 1052,7815.5 L 719.5,7815.5 L 712,7808 L 719.5,7800.5 L 1052,7800.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,8140.5 L 1052,8155.5 L 719.5,8155.5 L 712,8148 L 719.5,8140.5 L 1052,8140.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,8480.5 L 1052,8495.5 L 719.5,8495.5 L 712,8488 L 719.5,8480.5 L 1052,8480.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,8820.5 L 1052,8835.5 L 719.5,8835.5 L 712,8828 L 719.5,8820.5 L 1052,8820.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,9160.5 L 1052,9175.5 L 719.5,9175.5 L 712,9168 L 719.5,9160.5 L 1052,9160.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,9500.5 L 1052,9515.5 L 719.5,9515.5 L 712,9508 L 719.5,9500.5 L 1052,9500.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,5760.5 L 1052,5775.5 L 719.5,5775.5 L 712,5768 L 719.5,5760.5 L 1052,5760.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,5420.5 L 1052,5435.5 L 719.5,5435.5 L 712,5428 L 719.5,5420.5 L 1052,5420.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,5080.5 L 1052,5095.5 L 719.5,5095.5 L 712,5088 L 719.5,5080.5 L 1052,5080.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,4740.5 L 1052,4755.5 L 719.5,4755.5 L 712,4748 L 719.5,4740.5 L 1052,4740.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,4400.5 L 1052,4415.5 L 719.5,4415.5 L 712,4408 L 719.5,4400.5 L 1052,4400.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,4060.5 L 1052,4075.5 L 719.5,4075.5 L 712,4068 L 719.5,4060.5 L 1052,4060.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1052,3720.5 L 1052,3735.5 L 719.5,3735.5 L 704.5,3720.5 L 1052,3720.5 Z "/>
+    <!-- above is graph coord parts (labels, tick marks, lines) -->
+
+    <!-- upper row of molecule markers  -->
+    <path id="dash1" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1709.77,6079.98 L 1772,6106 L 1790.28,6132.02 L 1432,6132.02 L 1432,6079.98 L 1709.77,6079.98 Z "/>
+    <path id="dash2" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3299.36,6406.98 L 3160.64,6459.02 L 2952.23,6459.02 L 2827.77,6406.98 L 3299.36,6406.98 Z "/>
+    <path id="dash3" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4720.28,6111.48 L 4664.72,6163.52 L 4283.14,6163.52 L 4421.86,6111.48 L 4720.28,6111.48 Z "/>
+    <path id="dashTS1" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6078.4,5457.48 L 6099.6,5509.52 L 5721.22,5509.52 L 5776.78,5457.48 L 6078.4,5457.48 Z "/>
+    <path id="dash4" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7558.42,6906.48 L 7535.58,6958.52 L 7217.6,6958.52 L 7196.4,6906.48 L 7558.42,6906.48 Z "/>
+    <path id="dashTS2" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9086.46,5407.98 L 9115.54,5460.02 L 8749.58,5460.02 L 8772.42,5407.98 L 9086.46,5407.98 Z "/>
+    <path id="dash5" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10959,7003.98 L 10981,7056.02 L 10644.5,7056.02 L 10615.5,7003.98 L 10959,7003.98 Z "/>
+    <path id="dash6" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12396.5,8380.98 L 12396.5,8433.02 L 12067.5,8433.02 L 12045.5,8380.98 L 12396.5,8380.98 Z "/>
+
+
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2827.77,6406.98 L 2952.23,6459.02 L 2763.49,6403.81 L 2767.7,6389.42 L 2827.77,6406.98 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2707.64,6371.85 L 2703.43,6386.24 L 2643.36,6368.68 L 2647.57,6354.28 L 2707.64,6371.85 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2587.5,6336.71 L 2583.29,6351.11 L 2523.23,6333.54 L 2527.44,6319.14 L 2587.5,6336.71 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2467.37,6301.57 L 2463.16,6315.97 L 2403.09,6298.4 L 2407.3,6284 L 2467.37,6301.57 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2347.24,6266.43 L 2343.03,6280.83 L 2282.96,6263.26 L 2287.17,6248.87 L 2347.24,6266.43 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2227.1,6231.3 L 2222.89,6245.69 L 2162.83,6228.13 L 2167.04,6213.73 L 2227.1,6231.3 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2106.97,6196.16 L 2102.76,6210.56 L 2042.69,6192.99 L 2046.9,6178.59 L 2106.97,6196.16 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1986.84,6161.02 L 1982.63,6175.42 L 1922.56,6157.85 L 1926.77,6143.45 L 1986.84,6161.02 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1866.71,6125.89 L 1862.49,6140.28 L 1802.43,6122.71 L 1709.77,6079.98 L 1866.71,6125.89 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4421.86,6111.48 L 4283.14,6163.52 L 4225.49,6178.69 L 4221.67,6164.18 L 4421.86,6111.48 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4164.03,6179.36 L 4167.85,6193.87 L 4110.2,6209.04 L 4106.38,6194.53 L 4164.03,6179.36 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4048.74,6209.71 L 4052.56,6224.22 L 3994.91,6239.39 L 3991.1,6224.88 L 4048.74,6209.71 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3933.45,6240.06 L 3937.27,6254.57 L 3879.63,6269.74 L 3875.81,6255.23 L 3933.45,6240.06 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3818.16,6270.41 L 3821.98,6284.92 L 3764.34,6300.09 L 3760.52,6285.58 L 3818.16,6270.41 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3702.87,6300.76 L 3706.69,6315.27 L 3649.05,6330.44 L 3645.23,6315.93 L 3702.87,6300.76 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3587.59,6331.11 L 3591.4,6345.62 L 3533.76,6360.79 L 3529.94,6346.28 L 3587.59,6331.11 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3472.3,6361.46 L 3476.12,6375.97 L 3418.47,6391.14 L 3414.65,6376.63 L 3472.3,6361.46 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3357.01,6391.81 L 3360.83,6406.32 L 3160.64,6459.02 L 3299.36,6406.98 L 3357.01,6391.81 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5776.78,5457.48 L 5721.22,5509.52 L 5673.93,5538.79 L 5666.04,5526.03 L 5776.78,5457.48 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5618.75,5555.31 L 5626.65,5568.06 L 5579.36,5597.33 L 5571.46,5584.58 L 5618.75,5555.31 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5524.18,5613.85 L 5532.07,5626.61 L 5484.78,5655.88 L 5476.89,5643.12 L 5524.18,5613.85 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5429.6,5672.4 L 5437.49,5685.15 L 5390.21,5714.42 L 5382.31,5701.67 L 5429.6,5672.4 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5335.02,5730.94 L 5342.92,5743.7 L 5295.63,5772.97 L 5287.73,5760.21 L 5335.02,5730.94 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5240.45,5789.49 L 5248.34,5802.24 L 5201.05,5831.51 L 5193.16,5818.76 L 5240.45,5789.49 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5145.87,5848.03 L 5153.77,5860.79 L 5106.48,5890.06 L 5098.58,5877.3 L 5145.87,5848.03 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5051.29,5906.58 L 5059.19,5919.33 L 5011.9,5948.6 L 5004.01,5935.85 L 5051.29,5906.58 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4956.72,5965.12 L 4964.61,5977.88 L 4917.32,6007.15 L 4909.43,5994.39 L 4956.72,5965.12 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4862.14,6023.67 L 4870.04,6036.42 L 4822.75,6065.69 L 4814.85,6052.94 L 4862.14,6023.67 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4767.57,6082.21 L 4775.46,6094.97 L 4664.72,6163.52 L 4720.28,6111.48 L 4767.57,6082.21 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7196.4,6906.48 L 7217.6,6958.52 L 7151.65,6873.04 L 7163.52,6863.87 L 7196.4,6906.48 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7130.65,6821.26 L 7118.77,6830.43 L 7085.89,6787.82 L 7097.77,6778.65 L 7130.65,6821.26 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7064.89,6736.04 L 7053.02,6745.21 L 7020.14,6702.6 L 7032.02,6693.43 L 7064.89,6736.04 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6999.14,6650.82 L 6987.27,6659.99 L 6954.39,6617.38 L 6966.26,6608.21 L 6999.14,6650.82 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6933.39,6565.6 L 6921.51,6574.77 L 6888.64,6532.16 L 6900.51,6522.99 L 6933.39,6565.6 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6867.64,6480.38 L 6855.76,6489.55 L 6822.88,6446.94 L 6834.76,6437.77 L 6867.64,6480.38 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6801.88,6395.16 L 6790.01,6404.33 L 6757.13,6361.72 L 6769.01,6352.55 L 6801.88,6395.16 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6736.13,6309.94 L 6724.25,6319.11 L 6691.38,6276.5 L 6703.25,6267.33 L 6736.13,6309.94 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6670.38,6224.72 L 6658.5,6233.89 L 6625.62,6191.28 L 6637.5,6182.11 L 6670.38,6224.72 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6604.62,6139.5 L 6592.75,6148.67 L 6559.87,6106.06 L 6571.75,6096.89 L 6604.62,6139.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6538.87,6054.28 L 6526.99,6063.45 L 6494.12,6020.84 L 6505.99,6011.67 L 6538.87,6054.28 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6473.12,5969.06 L 6461.24,5978.23 L 6428.36,5935.62 L 6440.24,5926.45 L 6473.12,5969.06 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6407.36,5883.84 L 6395.49,5893.01 L 6362.61,5850.4 L 6374.49,5841.23 L 6407.36,5883.84 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6341.61,5798.62 L 6329.74,5807.79 L 6296.86,5765.18 L 6308.73,5756.01 L 6341.61,5798.62 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6275.86,5713.4 L 6263.98,5722.57 L 6231.11,5679.96 L 6242.98,5670.79 L 6275.86,5713.4 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6210.11,5628.18 L 6198.23,5637.35 L 6165.35,5594.74 L 6177.23,5585.57 L 6210.11,5628.18 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6144.35,5542.96 L 6132.48,5552.13 L 6099.6,5509.52 L 6078.4,5457.48 L 6144.35,5542.96 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8772.42,5407.98 L 8749.58,5460.02 L 8715.88,5501.61 L 8704.22,5492.17 L 8772.42,5407.98 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8670.52,5533.77 L 8682.18,5543.21 L 8648.48,5584.81 L 8636.82,5575.37 L 8670.52,5533.77 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8603.12,5616.96 L 8614.78,5626.41 L 8581.08,5668 L 8569.42,5658.56 L 8603.12,5616.96 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8535.72,5700.16 L 8547.38,5709.6 L 8513.68,5751.2 L 8502.02,5741.76 L 8535.72,5700.16 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8468.32,5783.35 L 8479.98,5792.8 L 8446.28,5834.39 L 8434.62,5824.95 L 8468.32,5783.35 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8400.92,5866.55 L 8412.58,5875.99 L 8378.88,5917.59 L 8367.22,5908.15 L 8400.92,5866.55 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8333.52,5949.74 L 8345.18,5959.19 L 8311.48,6000.78 L 8299.82,5991.34 L 8333.52,5949.74 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8266.12,6032.94 L 8277.78,6042.38 L 8244.08,6083.98 L 8232.42,6074.54 L 8266.12,6032.94 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8198.72,6116.13 L 8210.38,6125.57 L 8176.68,6167.17 L 8165.02,6157.73 L 8198.72,6116.13 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8131.32,6199.33 L 8142.98,6208.77 L 8109.28,6250.37 L 8097.62,6240.92 L 8131.32,6199.33 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8063.92,6282.52 L 8075.58,6291.96 L 8041.88,6333.56 L 8030.22,6324.12 L 8063.92,6282.52 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7996.52,6365.72 L 8008.18,6375.16 L 7974.48,6416.76 L 7962.82,6407.31 L 7996.52,6365.72 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7929.12,6448.91 L 7940.78,6458.35 L 7907.08,6499.95 L 7895.42,6490.51 L 7929.12,6448.91 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7861.72,6532.11 L 7873.38,6541.55 L 7839.68,6583.15 L 7828.02,6573.7 L 7861.72,6532.11 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7794.32,6615.3 L 7805.98,6624.74 L 7772.28,6666.34 L 7760.62,6656.9 L 7794.32,6615.3 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7726.92,6698.5 L 7738.58,6707.94 L 7704.88,6749.54 L 7693.22,6740.09 L 7726.92,6698.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7659.52,6781.69 L 7671.18,6791.13 L 7637.48,6832.73 L 7625.82,6823.29 L 7659.52,6781.69 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7592.12,6864.89 L 7603.78,6874.33 L 7535.58,6958.52 L 7558.42,6906.48 L 7592.12,6864.89 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10615.5,7003.98 L 10644.5,7056.02 L 10568.3,6976.45 L 10579.1,6966.07 L 10615.5,7003.98 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10542.8,6928.16 L 10532,6938.54 L 10495.7,6900.63 L 10506.5,6890.25 L 10542.8,6928.16 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10470.2,6852.34 L 10459.4,6862.72 L 10423,6824.81 L 10433.9,6814.43 L 10470.2,6852.34 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10397.5,6776.52 L 10386.7,6786.9 L 10350.4,6748.99 L 10361.2,6738.61 L 10397.5,6776.52 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10324.9,6700.7 L 10314.1,6711.07 L 10277.8,6673.16 L 10288.6,6662.79 L 10324.9,6700.7 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10252.3,6624.88 L 10241.4,6635.25 L 10205.1,6597.34 L 10215.9,6586.96 L 10252.3,6624.88 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10179.6,6549.05 L 10168.8,6559.43 L 10132.5,6521.52 L 10143.3,6511.14 L 10179.6,6549.05 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10107,6473.23 L 10096.2,6483.61 L 10059.8,6445.7 L 10070.7,6435.32 L 10107,6473.23 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10034.4,6397.41 L 10023.5,6407.79 L 9987.2,6369.88 L 9998.03,6359.5 L 10034.4,6397.41 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9961.71,6321.59 L 9950.88,6331.97 L 9914.56,6294.05 L 9925.39,6283.68 L 9961.71,6321.59 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9889.08,6245.77 L 9878.24,6256.14 L 9841.92,6218.23 L 9852.76,6207.86 L 9889.08,6245.77 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9816.44,6169.95 L 9805.61,6180.32 L 9769.29,6142.41 L 9780.12,6132.03 L 9816.44,6169.95 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9743.8,6094.12 L 9732.97,6104.5 L 9696.65,6066.59 L 9707.48,6056.21 L 9743.8,6094.12 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9671.16,6018.3 L 9660.33,6028.68 L 9624.01,5990.77 L 9634.84,5980.39 L 9671.16,6018.3 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9598.52,5942.48 L 9587.69,5952.86 L 9551.37,5914.95 L 9562.2,5904.57 L 9598.52,5942.48 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9525.88,5866.66 L 9515.05,5877.04 L 9478.73,5839.12 L 9489.56,5828.75 L 9525.88,5866.66 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9453.24,5790.84 L 9442.41,5801.21 L 9406.09,5763.3 L 9416.92,5752.93 L 9453.24,5790.84 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9380.6,5715.01 L 9369.77,5725.39 L 9333.45,5687.48 L 9344.28,5677.1 L 9380.6,5715.01 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9307.97,5639.19 L 9297.13,5649.57 L 9260.81,5611.66 L 9271.65,5601.28 L 9307.97,5639.19 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9235.33,5563.37 L 9224.5,5573.75 L 9188.18,5535.84 L 9199.01,5525.46 L 9235.33,5563.37 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9162.69,5487.55 L 9151.86,5497.93 L 9115.54,5460.02 L 9086.46,5407.98 L 9162.69,5487.55 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12045.5,8380.98 L 12067.5,8433.02 L 11999.8,8347.24 L 12011.6,8337.94 L 12045.5,8380.98 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11977.6,8294.9 L 11965.8,8304.19 L 11931.9,8261.15 L 11943.6,8251.86 L 11977.6,8294.9 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11909.7,8208.82 L 11897.9,8218.11 L 11863.9,8175.07 L 11875.7,8165.78 L 11909.7,8208.82 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11841.8,8122.74 L 11830,8132.03 L 11796,8088.99 L 11807.8,8079.7 L 11841.8,8122.74 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11773.8,8036.66 L 11762.1,8045.95 L 11728.1,8002.91 L 11739.9,7993.62 L 11773.8,8036.66 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11705.9,7950.58 L 11694.1,7959.87 L 11660.2,7916.83 L 11672,7907.54 L 11705.9,7950.58 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11638,7864.5 L 11626.2,7873.79 L 11592.3,7830.75 L 11604,7821.46 L 11638,7864.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11570.1,7778.42 L 11558.3,7787.71 L 11524.3,7744.67 L 11536.1,7735.37 L 11570.1,7778.42 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11502.2,7692.33 L 11490.4,7701.63 L 11456.4,7658.58 L 11468.2,7649.29 L 11502.2,7692.33 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11434.2,7606.25 L 11422.5,7615.54 L 11388.5,7572.5 L 11400.3,7563.21 L 11434.2,7606.25 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11366.3,7520.17 L 11354.5,7529.46 L 11320.6,7486.42 L 11332.4,7477.13 L 11366.3,7520.17 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11298.4,7434.09 L 11286.6,7443.38 L 11252.7,7400.34 L 11264.4,7391.05 L 11298.4,7434.09 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11230.5,7348.01 L 11218.7,7357.3 L 11184.7,7314.26 L 11196.5,7304.97 L 11230.5,7348.01 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11162.6,7261.93 L 11150.8,7271.22 L 11116.8,7228.18 L 11128.6,7218.89 L 11162.6,7261.93 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11094.6,7175.85 L 11082.9,7185.14 L 11048.9,7142.1 L 11060.7,7132.81 L 11094.6,7175.85 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11026.7,7089.76 L 11014.9,7099.06 L 10981,7056.02 L 10959,7003.98 L 11026.7,7089.76 Z "/>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 55.125 135.475)"
+          style="font:normal normal normal 200px 'Arial'">
+      0.0
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 126 149.425)"
+          style="font:normal normal normal 200px 'Arial'">
+      -4.8
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 123.52 183.452)"
+          style="font:normal normal normal 200px 'Arial'">
+      -14.1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 198.15 134.425)"
+          style="font:normal normal normal 200px 'Arial'">
+      -1.2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 198.046 206.707)"
+          style="font:normal normal normal 200px 'Arial'">
+      -22.3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 271.2 102.775)"
+          style="font:normal normal normal 200px 'Arial'">
+      9.5
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 272.026 150.55)"
+          style="font:normal normal normal 200px 'Arial'">
+      -7.7
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 338.925 175)"
+          style="font:normal normal normal 200px 'Arial'">
+      -11.1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 341.652 232.957)"
+          style="font:normal normal normal 200px 'Arial'">
+      -29.6
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 423.225 100.6)"
+          style="font:normal normal normal 200px 'Arial'">
+      5.7
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 512.85 180.925)"
+          style="font:normal normal normal 200px 'Arial'">
+      -7.3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 581.175 249.025)"
+          style="font:normal normal normal 200px 'Arial'">
+      -32.9
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 583.35 286.311)"
+          style="font:normal normal normal 200px 'Arial'">
+      -46.8
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 48.45 103.525)"
+          style="font:normal normal bold 200px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 56.7898 103.525)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 65.408 103.525)"
+          style="font:normal normal normal 200px 'Arial'">
+      3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 70.9695 103.525)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 76.5311 105.136)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 48.225 116.35)"
+          style="font:normal normal bold 200px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 56.5648 116.35)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 65.183 116.35)"
+          style="font:normal normal normal 200px 'Arial'">
+      3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 70.7445 116.35)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 76.306 117.961)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 122.25 132.4)"
+          style="font:normal normal bold 200px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 130.59 132.4)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 139.208 132.4)"
+          style="font:normal normal normal 200px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 144.77 132.4)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 150.331 134.011)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 123.799 166.091)"
+          style="font:normal normal bold 200px 'Arial'">
+      7
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 132.139 166.091)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 140.757 166.091)"
+          style="font:normal normal normal 200px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 146.319 166.091)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 151.881 167.703)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 194.85 117.175)"
+          style="font:normal normal bold 200px 'Arial'">
+      3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 203.19 117.175)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 211.808 117.175)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 217.37 118.786)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 194.625 187.12)"
+          style="font:normal normal bold 200px 'Arial'">
+      8
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 202.965 187.12)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 211.583 187.12)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 217.145 188.731)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 256.425 84.85)"
+          style="font:normal normal bold 200px 'Arial'">
+      TS1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 277.543 84.85)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 286.161 84.85)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 291.723 86.4611)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 258.204 131.459)"
+          style="font:normal normal bold 200px 'Arial'">
+      TS3
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 279.322 131.459)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 287.94 131.459)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 293.502 133.071)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 339.6 152.725)"
+          style="font:normal normal bold 200px 'Arial'">
+      4
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 347.94 152.725)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 356.558 152.725)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 362.12 154.336)"
+          style="font:normal normal normal 150px 'Arial'">
+      1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 342.03 215.039)"
+          style="font:normal normal bold 200px 'Arial'">
+      9
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 350.37 215.039)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 358.988 215.039)"
+          style="font:normal normal normal 200px 'Arial'">
+      L
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 364.55 216.651)"
+          style="font:normal normal normal 150px 'Arial'">
+      2
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 519.825 161.95)"
+          style="font:normal normal bold 200px 'Arial'">
+      5
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 583.725 229.45)"
+          style="font:normal normal bold 200px 'Arial'">
+      6
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 592.065 229.45)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 600.683 229.45)"
+          style="font:normal normal normal 200px 'Arial'">
+      O
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff0000" transform="matrix(0.05 0 0 0.05 608.461 229.45)"
+          style="font:normal normal normal 200px 'Arial'">
+      CO
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 572.406 269.093)"
+          style="font:normal normal bold 200px 'Arial'">
+      10
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 583.53 269.093)"
+          style="font:normal normal normal 200px 'Arial'">
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 586.308 269.093)"
+          style="font:normal normal normal 200px 'Arial'">
+      +
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 594.926 269.093)"
+          style="font:normal normal normal 200px 'Arial'">
+      O
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#ff00ff" transform="matrix(0.05 0 0 0.05 602.704 269.093)"
+          style="font:normal normal normal 200px 'Arial'">
+      CNPh
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 418.721 78.6472)"
+          style="font:normal normal bold 200px 'Arial'">
+      TS2
+    </text>
+
+
+    <!-- below is each molecule marker -->
+    <path id="dash7" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3188.16,7063.5 L 3278.32,7115.54 L 2911.52,7115.54 L 2874.95,7063.5 L 3188.16,7063.5 Z "/>
+    <path id="dash8" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4718.53,7513.68 L 4689.93,7565.72 L 4409.31,7565.72 L 4319.15,7513.68 L 4718.53,7513.68 Z "/>
+    <path id="dashTS3" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6109.59,6379.77 L 6126.07,6431.81 L 5763.53,6431.81 L 5792.13,6379.77 L 6109.59,6379.77 Z "/>
+    <path id="dash9" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7489.35,8052.81 L 7643.59,8104.85 L 7234.71,8104.85 L 7218.23,8052.81 L 7489.35,8052.81 Z "/>
+    <path id="dash10" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12421.5,9124.65 L 12421.5,9176.69 L 12158.7,9176.69 L 12004.4,9124.65 L 12421.5,9124.65 Z "/>
+
+    <!-- dashes between molecule marker 7-10 -->
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4319.15,7513.68 L 4409.31,7565.72 L 4259.11,7505.93 L 4264.66,7492 L 4319.15,7513.68 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4210.17,7470.31 L 4204.63,7484.24 L 4150.14,7462.55 L 4155.68,7448.62 L 4210.17,7470.31 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4101.2,7426.93 L 4095.65,7440.87 L 4041.16,7419.18 L 4046.71,7405.24 L 4101.2,7426.93 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3992.22,7383.55 L 3986.67,7397.49 L 3932.18,7375.8 L 3937.73,7361.86 L 3992.22,7383.55 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3883.24,7340.17 L 3877.69,7354.11 L 3823.21,7332.42 L 3828.75,7318.49 L 3883.24,7340.17 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3774.26,7296.8 L 3768.72,7310.73 L 3714.23,7289.05 L 3719.78,7275.11 L 3774.26,7296.8 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3665.29,7253.42 L 3659.74,7267.36 L 3605.25,7245.67 L 3610.8,7231.73 L 3665.29,7253.42 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3556.31,7210.04 L 3550.76,7223.98 L 3496.27,7202.29 L 3501.82,7188.35 L 3556.31,7210.04 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3447.33,7166.67 L 3441.78,7180.6 L 3387.3,7158.91 L 3392.84,7144.98 L 3447.33,7166.67 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 3338.35,7123.29 L 3332.81,7137.22 L 3278.32,7115.54 L 3188.16,7063.5 L 3338.35,7123.29 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5792.13,6379.77 L 5763.53,6431.81 L 5725.23,6472.26 L 5714.33,6461.94 L 5792.13,6379.77 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5676.03,6502.4 L 5686.93,6512.71 L 5648.63,6553.16 L 5637.73,6542.85 L 5676.03,6502.4 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5599.43,6583.3 L 5610.33,6593.61 L 5572.03,6634.06 L 5561.13,6623.75 L 5599.43,6583.3 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5522.83,6664.2 L 5533.73,6674.51 L 5495.43,6714.97 L 5484.53,6704.65 L 5522.83,6664.2 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5446.23,6745.1 L 5457.13,6755.42 L 5418.83,6795.87 L 5407.93,6785.56 L 5446.23,6745.1 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5369.63,6826.01 L 5380.53,6836.32 L 5342.23,6876.77 L 5331.33,6866.46 L 5369.63,6826.01 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5293.03,6906.91 L 5303.93,6917.22 L 5265.63,6957.68 L 5254.73,6947.36 L 5293.03,6906.91 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5216.43,6987.81 L 5227.33,6998.13 L 5189.03,7038.58 L 5178.13,7028.27 L 5216.43,6987.81 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5139.83,7068.72 L 5150.73,7079.03 L 5112.43,7119.48 L 5101.53,7109.17 L 5139.83,7068.72 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 5063.23,7149.62 L 5074.13,7159.93 L 5035.83,7200.38 L 5024.93,7190.07 L 5063.23,7149.62 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4986.63,7230.52 L 4997.53,7240.84 L 4959.23,7281.29 L 4948.33,7270.97 L 4986.63,7230.52 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4910.03,7311.43 L 4920.93,7321.74 L 4882.63,7362.19 L 4871.73,7351.88 L 4910.03,7311.43 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4833.43,7392.33 L 4844.33,7402.64 L 4806.03,7443.09 L 4795.13,7432.78 L 4833.43,7392.33 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 4756.83,7473.23 L 4767.73,7483.55 L 4689.93,7565.72 L 4718.53,7513.68 L 4756.83,7473.23 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7218.23,8052.81 L 7234.71,8104.85 L 7176.54,8017.07 L 7189.05,8008.78 L 7218.23,8052.81 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7159.87,7964.74 L 7147.36,7973.03 L 7118.18,7929 L 7130.69,7920.71 L 7159.87,7964.74 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7101.51,7876.67 L 7089,7884.96 L 7059.82,7840.93 L 7072.33,7832.64 L 7101.51,7876.67 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7043.15,7788.6 L 7030.65,7796.89 L 7001.47,7752.86 L 7013.97,7744.57 L 7043.15,7788.6 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6984.79,7700.53 L 6972.29,7708.82 L 6943.11,7664.79 L 6955.61,7656.5 L 6984.79,7700.53 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6926.43,7612.46 L 6913.93,7620.75 L 6884.75,7576.72 L 6897.25,7568.43 L 6926.43,7612.46 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6868.07,7524.39 L 6855.57,7532.68 L 6826.39,7488.65 L 6838.89,7480.36 L 6868.07,7524.39 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6809.71,7436.32 L 6797.21,7444.61 L 6768.03,7400.58 L 6780.53,7392.29 L 6809.71,7436.32 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6751.35,7348.25 L 6738.85,7356.54 L 6709.67,7312.51 L 6722.17,7304.22 L 6751.35,7348.25 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6692.99,7260.18 L 6680.49,7268.47 L 6651.31,7224.44 L 6663.81,7216.15 L 6692.99,7260.18 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6634.63,7172.11 L 6622.13,7180.4 L 6592.95,7136.37 L 6605.45,7128.08 L 6634.63,7172.11 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6576.27,7084.04 L 6563.77,7092.33 L 6534.59,7048.3 L 6547.09,7040.01 L 6576.27,7084.04 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6517.91,6995.97 L 6505.41,7004.26 L 6476.23,6960.23 L 6488.73,6951.94 L 6517.91,6995.97 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6459.55,6907.9 L 6447.05,6916.19 L 6417.87,6872.16 L 6430.37,6863.87 L 6459.55,6907.9 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6401.19,6819.83 L 6388.69,6828.12 L 6359.51,6784.09 L 6372.01,6775.8 L 6401.19,6819.83 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6342.83,6731.76 L 6330.33,6740.05 L 6301.15,6696.02 L 6313.65,6687.73 L 6342.83,6731.76 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6284.47,6643.69 L 6271.97,6651.98 L 6242.79,6607.95 L 6255.29,6599.66 L 6284.47,6643.69 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6226.12,6555.62 L 6213.61,6563.91 L 6184.43,6519.88 L 6196.94,6511.59 L 6226.12,6555.62 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 6167.76,6467.55 L 6155.25,6475.84 L 6126.07,6431.81 L 6109.59,6379.77 L 6167.76,6467.55 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 12004.4,9124.65 L 12158.7,9176.69 L 11948.5,9126.79 L 11951.9,9112.19 L 12004.4,9124.65 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11899.4,9099.73 L 11896,9114.32 L 11843.5,9101.86 L 11846.9,9087.27 L 11899.4,9099.73 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11794.4,9074.8 L 11791,9089.4 L 11738.5,9076.94 L 11741.9,9062.34 L 11794.4,9074.8 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11689.4,9049.88 L 11686,9064.47 L 11633.5,9052.01 L 11636.9,9037.42 L 11689.4,9049.88 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11584.4,9024.95 L 11581,9039.55 L 11528.5,9027.08 L 11531.9,9012.49 L 11584.4,9024.95 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11479.4,9000.03 L 11476,9014.62 L 11423.5,9002.16 L 11426.9,8987.56 L 11479.4,9000.03 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11374.4,8975.1 L 11371,8989.7 L 11318.5,8977.23 L 11322,8962.64 L 11374.4,8975.1 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11269.5,8950.18 L 11266,8964.77 L 11213.5,8952.31 L 11217,8937.71 L 11269.5,8950.18 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11164.5,8925.25 L 11161,8939.85 L 11108.5,8927.38 L 11112,8912.79 L 11164.5,8925.25 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 11059.5,8900.33 L 11056,8914.92 L 11003.5,8902.46 L 11007,8887.86 L 11059.5,8900.33 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10954.5,8875.4 L 10951,8889.99 L 10898.5,8877.53 L 10902,8862.94 L 10954.5,8875.4 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10849.5,8850.48 L 10846,8865.07 L 10793.5,8852.61 L 10797,8838.01 L 10849.5,8850.48 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10744.5,8825.55 L 10741,8840.14 L 10688.5,8827.68 L 10692,8813.09 L 10744.5,8825.55 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10639.5,8800.62 L 10636,8815.22 L 10583.5,8802.76 L 10587,8788.16 L 10639.5,8800.62 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10534.5,8775.7 L 10531,8790.29 L 10478.5,8777.83 L 10482,8763.24 L 10534.5,8775.7 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10429.5,8750.77 L 10426,8765.37 L 10373.5,8752.91 L 10377,8738.31 L 10429.5,8750.77 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10324.5,8725.85 L 10321,8740.44 L 10268.5,8727.98 L 10272,8713.39 L 10324.5,8725.85 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10219.5,8700.92 L 10216,8715.52 L 10163.5,8703.05 L 10167,8688.46 L 10219.5,8700.92 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10114.5,8676 L 10111,8690.59 L 10058.5,8678.13 L 10062,8663.53 L 10114.5,8676 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 10009.5,8651.07 L 10006,8665.67 L 9953.52,8653.2 L 9956.99,8638.61 L 10009.5,8651.07 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9904.49,8626.15 L 9901.03,8640.74 L 9848.53,8628.28 L 9851.99,8613.68 L 9904.49,8626.15 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9799.49,8601.22 L 9796.03,8615.82 L 9743.53,8603.35 L 9746.99,8588.76 L 9799.49,8601.22 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9694.5,8576.3 L 9691.03,8590.89 L 9638.53,8578.43 L 9642,8563.83 L 9694.5,8576.3 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9589.5,8551.37 L 9586.03,8565.97 L 9533.54,8553.5 L 9537,8538.91 L 9589.5,8551.37 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9484.5,8526.45 L 9481.04,8541.04 L 9428.54,8528.58 L 9432,8513.98 L 9484.5,8526.45 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9379.5,8501.52 L 9376.04,8516.11 L 9323.54,8503.65 L 9327.01,8489.06 L 9379.5,8501.52 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9274.51,8476.59 L 9271.04,8491.19 L 9218.54,8478.73 L 9222.01,8464.13 L 9274.51,8476.59 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9169.51,8451.67 L 9166.05,8466.26 L 9113.55,8453.8 L 9117.01,8439.21 L 9169.51,8451.67 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 9064.51,8426.74 L 9061.05,8441.34 L 9008.55,8428.88 L 9012.01,8414.28 L 9064.51,8426.74 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8959.52,8401.82 L 8956.05,8416.41 L 8903.55,8403.95 L 8907.02,8389.36 L 8959.52,8401.82 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8854.52,8376.89 L 8851.05,8391.49 L 8798.56,8379.02 L 8802.02,8364.43 L 8854.52,8376.89 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8749.52,8351.97 L 8746.06,8366.56 L 8693.56,8354.1 L 8697.02,8339.5 L 8749.52,8351.97 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8644.52,8327.04 L 8641.06,8341.64 L 8588.56,8329.17 L 8592.03,8314.58 L 8644.52,8327.04 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8539.53,8302.12 L 8536.06,8316.71 L 8483.56,8304.25 L 8487.03,8289.65 L 8539.53,8302.12 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8434.53,8277.19 L 8431.07,8291.79 L 8378.57,8279.32 L 8382.03,8264.73 L 8434.53,8277.19 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8329.53,8252.27 L 8326.07,8266.86 L 8273.57,8254.4 L 8277.04,8239.8 L 8329.53,8252.27 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8224.54,8227.34 L 8221.07,8241.94 L 8168.57,8229.47 L 8172.04,8214.88 L 8224.54,8227.34 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8119.54,8202.42 L 8116.07,8217.01 L 8063.58,8204.55 L 8067.04,8189.95 L 8119.54,8202.42 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 8014.54,8177.49 L 8011.08,8192.08 L 7958.58,8179.62 L 7962.04,8165.03 L 8014.54,8177.49 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7909.55,8152.56 L 7906.08,8167.16 L 7853.58,8154.7 L 7857.05,8140.1 L 7909.55,8152.56 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7804.55,8127.64 L 7801.08,8142.23 L 7748.59,8129.77 L 7752.05,8115.18 L 7804.55,8127.64 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 7699.55,8102.71 L 7696.09,8117.31 L 7643.59,8104.85 L 7489.35,8052.81 L 7699.55,8102.71 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1790.28,6132.02 L 1802.43,6122.71 L 1842.15,6157.56 L 1832.26,6168.83 L 1790.28,6132.02 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1871.98,6203.68 L 1881.87,6192.4 L 1921.6,6227.25 L 1911.71,6238.52 L 1871.98,6203.68 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 1951.43,6273.37 L 1961.32,6262.09 L 2001.04,6296.93 L 1991.15,6308.21 L 1951.43,6273.37 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2030.88,6343.05 L 2040.77,6331.78 L 2080.49,6366.62 L 2070.6,6377.9 L 2030.88,6343.05 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2110.32,6412.74 L 2120.21,6401.47 L 2159.94,6436.31 L 2150.05,6447.59 L 2110.32,6412.74 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2189.77,6482.43 L 2199.66,6471.15 L 2239.38,6506 L 2229.49,6517.28 L 2189.77,6482.43 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2269.21,6552.12 L 2279.11,6540.84 L 2318.83,6575.69 L 2308.94,6586.96 L 2269.21,6552.12 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2348.66,6621.81 L 2358.55,6610.53 L 2398.28,6645.38 L 2388.38,6656.65 L 2348.66,6621.81 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2428.11,6691.5 L 2438,6680.22 L 2477.72,6715.06 L 2467.83,6726.34 L 2428.11,6691.5 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2507.55,6761.18 L 2517.45,6749.91 L 2557.17,6784.75 L 2547.28,6796.03 L 2507.55,6761.18 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2587,6830.87 L 2596.89,6819.6 L 2636.62,6854.44 L 2626.72,6865.72 L 2587,6830.87 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2666.45,6900.56 L 2676.34,6889.28 L 2716.06,6924.13 L 2706.17,6935.4 L 2666.45,6900.56 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2745.89,6970.25 L 2755.79,6958.97 L 2795.51,6993.82 L 2785.62,7005.09 L 2745.89,6970.25 Z "/>
+    <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -17 -184)"
+          d="M 2825.34,7039.94 L 2835.23,7028.66 L 2874.95,7063.5 L 2911.52,7115.54 L 2825.34,7039.94 Z "/>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 241.375 324.125)"
+          style="font:normal normal normal 200px 'Arial'">
+      Reaction
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 283.621 324.125)"
+          style="font:normal normal normal 200px 'Arial'">
+      Coordinate
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 13.9918 232.78)"
+          style="font:normal normal normal 200px 'Arial'">
+      Free
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 13.9918 209.44)"
+          style="font:normal normal normal 200px 'Arial'">
+      energy
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 13.9918 176.085)"
+          style="font:normal normal normal 200px 'Arial'">
+      (kcal
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 13.9918 152.194)"
+          style="font:normal normal normal 200px 'Arial'">
+      mol
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 10.5196 136.08)"
+          style="font:normal normal normal 150px 'Arial'">
+      -1
+    </text>
+    <text x="0" y="0" stroke="transparent" fill="#000000"
+          transform="matrix(-9.18485e-18 -0.05 0.05 -9.18485e-18 13.9918 129.412)"
+          style="font:normal normal normal 200px 'Arial'">
+      )
+    </text>
+  <g stroke-dasharray="1,1" stroke="black" stroke-opacity="0.4">
+    <rect id="button1" (click)="onClick('1star')" fill="000000" fill-opacity="0.0" x="40" y="90"
+          width="50"
+          height="50"/>
+    <rect id="button2" (click)="onClick('B-CO')" fill="000000" fill-opacity="0.0" x="112" y="105"
+          width="50"
+          height="50"/>
+    <rect id="button3" (click)="onClick('C-CO')" fill="000000" fill-opacity="0.0" x="185" y="95"
+          width="50"
+          height="50"/>
+    <rect id="buttonTS1" (click)="onClick('D(TS)')" fill="000000" fill-opacity="0.0" x="252" y="60"
+          width="50" height="50"/>
+    <rect id="button4" (click)="onClick('F')" fill="000000" fill-opacity="0.0" x="330" y="135" width="50"
+          height="50"/>
+    <rect id="buttonTS2" (click)="onClick('H(TS)')" fill="000000" fill-opacity="0.0" x="405" y="55"
+          width="50" height="50"/>
+    <rect id="button5" (click)="onClick('I')" fill="000000" fill-opacity="0.0" x="498" y="140" width="50"
+          height="50"/>
+    <rect id="button6" (click)="onClick('J-CO')" fill="000000" fill-opacity="0.0" x="568" y="205"
+          width="65" height="50"/>
+    <rect id="button7" (click)="onClick('B-PhNC')" fill="000000" fill-opacity="0.0" x="112" y="155"
+          width="50" height="50"/>
+    <rect id="button8" (click)="onClick('C-PhNC')" fill="000000" fill-opacity="0.0" x="185" y="168"
+          width="50" height="50"/>
+    <rect id="buttonTS3" (click)="onClick('E(TS)')" fill="000000" fill-opacity="0.0" x="252" y="115"
+          width="50" height="50"/>
+    <rect id="button9" (click)="onClick('G')" fill="000000" fill-opacity="0.0" x="330" y="195" width="50"
+          height="50"/>
+    <rect id="button10" (click)="onClick('J-PhNC')" fill="000000" fill-opacity="0.0" x="568" y="255"
+          width="65" height="50"/>
+  </g>
+  </svg>
+</div>

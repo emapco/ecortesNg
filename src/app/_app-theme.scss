@@ -5,16 +5,8 @@
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
 
-  app-header  {
+  app-header, mat-drawer, mat-expansion-panel  {
     background-color: mat.get-color-from-palette($accent) !important;
-  }
-
-  mat-drawer, mat-expansion-panel {
-    background-color: mat.get-color-from-palette($accent) !important;
-  }
-
-  div, app-header, mat-panel-title, .mat-expansion-indicator::after, img{
-    color: #dfe7f1 !important;
   }
 
   a {

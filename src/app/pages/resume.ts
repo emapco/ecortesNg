@@ -13,7 +13,7 @@ let educationMD = `
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   Associate of Science, Computer Science (in progress)<br>
-  Anticipated completion December 2021<br>
+  Obtained December 2021<br>
   GPA: 3.935/4.000<br>
 
   Certificate of achievement: Computer science - Advanced C++ programming<br>
