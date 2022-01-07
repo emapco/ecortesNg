@@ -5,7 +5,7 @@ import {MatDialog} from '@angular/material/dialog';
 @Component({
   selector: 'app-oat-research-page',
   templateUrl: './oat-research-page.component.html',
-  styleUrls: ['./oat-research-page.component.css']
+  styleUrls: ['./research-pages.css']
 })
 export class OatResearchPageComponent {
 

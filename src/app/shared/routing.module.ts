@@ -4,6 +4,7 @@ import {PageNotFoundComponent} from "../pages/page-not-found/page-not-found.comp
 import {PathVisualizerPageComponent} from "../pages/path-visualizer-page/path-visualizer-page.component";
 import {HomePageComponent} from "../pages/home-page/home-page.component";
 import {OatResearchPageComponent} from "../pages/research-page/oat-research-page.component";
+import {BoraneResearchPageComponent} from "../pages/research-page/borane-research-page.component";
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'oat-research',
     component: OatResearchPageComponent
+  },
+  {
+    path: 'borane-activation-research',
+    component: BoraneResearchPageComponent
   },
   {
     path: '**',
