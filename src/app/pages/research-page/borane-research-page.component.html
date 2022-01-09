@@ -14,19 +14,31 @@
     </p>
     <p>
       However, 1's Re-O bonding is significantly weaker with a Wiberg bond index (WBI) value of 1.60.
-      WBI is a formalism for calculating a bond strength. Natural bond orbital (NBO) analysis shows that 1's Re-O
+      WBI is a formalism for calculating bond strengths. Natural bond orbital (NBO) analysis shows that 1's Re-O
       contains two bonds as opposed to three bonds present in structures 2 and 3.
       The weakened bond is also reflected in the natural population analysis (NPA) charges which show a more
-      negatively charged oxo ligand due to it not sharing electrons with the metal center.
+      negatively charged and polarize oxo ligand due to it not sharing electrons with the metal center.
     </p>
     <p>
       The weakening of the Re-O by the addition of the imido group (NPh) is an example of π-loading. π-loading is the
       incorporation of ligands with strong double or triple bonds that help saturate the metal's d orbitals.
       Thus, for Re to facilitate the extra electrons from the NPh ligand in 1, it must weaken its Re-O bond.
     </p>
-    <div class="img-container">
+    <div class="img-container row">
       <img class="fixed-size" alt="electronic charges for various rhenium complexes"
            src="../../../assets/structures/images/charges.svg">
+    </div>
+    <p>
+      I was able to identify a canonical MO (molecular orbital) which contains Re-O π-bonding characteristics
+      (HOMO-16) and a MO with Re-O anti-bonding characteristics (HOMO-1) similar to the lone pair shown in the NBO images below.
+      The HOMO-1 also shows π-bonding characteristics between the Re and imido ligand.
+    </p>
+    <div class="img-container row">
+      <figure>
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/HOMO1.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/HOMO16.png">
+        <figcaption>Structure 1: HOMO-1 (top) and HOMO-16 (bottom)</figcaption>
+      </figure>
     </div>
     <br>
     <p>
@@ -37,20 +49,20 @@
       compound with distinctive chemistry and is the subject of a few publications by
       my (undergraduate) research group, the John Arnold group.
     </p>
-    <div class="img-container">
+    <div class="img-container row">
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/oi-lp.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/oi-pi.png">
-        <figcaption>Structure 1: Lone pair and π bond NBOs</figcaption>
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/oilp.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/oipi.png">
+        <figcaption>Structure 1: Lone pair (top) and π bond (bottom) NBOs</figcaption>
       </figure>
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/odhf-pi1.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/odhf-pi2.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/odhfpi1.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/odhfpi2.png">
         <figcaption>Structure 2: π bond NBOs</figcaption>
       </figure>
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/odc-pi1.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/nbo/odc-pi2.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/odcpi1.png">
+        <img class="fixed-size" alt="" src="../../../assets/structures/images/odcpi2.png">
         <figcaption>Structure 3: π bond NBOs</figcaption>
       </figure>
     </div>
@@ -94,9 +106,9 @@
       Locating the transition state was the most time-consuming and challenging aspect of this project.
       Below is an animation of the transition state along its imaginary frequency vibrational mode.
     </p>
-    <div class="img-container">
+    <div class="img-container row">
       <figure>
-        <img mat-card-image alt="transition state animation" src="../../../assets/structures/images/ts.gif">
+        <img mat-card-image alt="transition state animation" src="../../../assets/structures/images/transitionstate.gif">
       </figure>
     </div>
     <p>Below is the reaction mechanism that I modeled.
@@ -115,7 +127,7 @@
   </mat-card-actions>
 </mat-card>
 
-<div class="mech">
+<div class="mech row">
   <svg width="85%" height="85%" viewBox="0 0 727 449" style="background-color: #ffffffff"
        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 75 122)"

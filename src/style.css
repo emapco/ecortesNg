@@ -54,6 +54,6 @@ mat-icon {
   transform: scale(.75);
 }
 
-mat-list-item {
+mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {
   color: white !important;
 }

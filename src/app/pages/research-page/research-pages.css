@@ -1,17 +1,12 @@
 .mech {
   width: 95%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
-  padding: .5em 0;
 }
 
 .img-container {
   width: 100%;
+}
+
+.row {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -21,6 +16,17 @@ p {
 .fixed-size {
   width: 420px;
   height: 284px;
+}
+
+p {
+  padding: .5em 0;
+}
+
+figure {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 mat-card {

@@ -12,7 +12,7 @@ let educationMD = `
   GPA: 3.807/4.000
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
-  Associate of Science, Computer Science (in progress)<br>
+  Associate of Science, Computer Science<br>
   Obtained December 2021<br>
   GPA: 3.935/4.000<br>
 
@@ -23,9 +23,9 @@ let educationMD = `
 let skillsMD = `
   **Personal**: Problem solver, analytical thinker, eagar to learn
 
-  **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XPRD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
+  **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
 
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, SASS, JavaScript, Typescript, Angular (framework)
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, Angular (framework)
   `
 let courseworkMD = `
   **Computer Science**:
@@ -41,8 +41,8 @@ let courseworkMD = `
   - General Chemistry
   - Organic Chemistry
   - Inorganic Chemistry
-  - Physical Chemistry
   - Analytical Chemistry
+  - Physical Chemistry
   - Quantum Mechanics and Spectroscopy
   - Special Topics: Computational Quantum Chemistry: Theory and Practice
 
@@ -70,7 +70,8 @@ let labsMD = `
 let jobsMD = `
   **John Arnold Group (Berkeley, CA)** <br>
   *Undergraduate Student Researcher (July 2018 - July 2020)*<br>
-  Applied quantum chemistry software (Gaussian, Q-Chem, and Multiwfn) to calculate the thermodynamics, kinetics, electronic structures, and reaction mechanisms of inorganic compounds. Research provided theoretical insight into the factors giving rise to the compounds' unusual reactivity.
+  Applied quantum chemistry software (Gaussian, Q-Chem, and Multiwfn) to calculate the thermodynamics, electronic structures, and reaction mechanisms of inorganic compounds.
+  Research provided theoretical insight into the factors giving rise to the compounds' reactivity.
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   *Chemistry Peer Tutor (Aug. 2017 - May 2018)*<br>
