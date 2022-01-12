@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MolViewerComponent} from "../mol-viewer/mol-viewer.component";
+import {MolViewerComponent} from "../../components/mol-viewer/mol-viewer.component";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({
