@@ -38,19 +38,65 @@ export class MolViewerComponent implements OnInit {
     // get mol data from file
     let mol2Data = await this.molData.get(folder, file);
     let config = {backgroundAlpha: 0};
+
     // create viewer on displayElement element and apply config style
     let viewer = $3Dmol.createViewer(displayElement, config);
-    // add data to viewer
+
+    // add structure data to the viewer
     viewer.addModel(mol2Data, "mol2");
+
+    // add atom labels to molecule structure
+    addAtomLabels(mol2Data, viewer);
+
     // customize the viewer
     viewer.setStyle({
       sphere: {scale: 1, opacity: 1, hidden: false, radius: .3},
       stick: {opacity: 1, radius: .1},
     });
+
     // zoom in on molecule and display it
     viewer.zoomTo();
     viewer.render();
+
     // set innerWidth otherwise WebGL canvas width is indeterminate
     displayElement.innerWidth(352);
+  }
+}
+
+function addAtomLabels(data: string, viewer: any): void {
+  const atomHeader = '@<TRIPOS>ATOM';
+  const bondHeader = '@<TRIPOS>BOND';
+  let isAtomSection = false;
+
+  let splitData: string[] = data.split('\n');
+  splitData.forEach((elem) => {
+    if (elem === atomHeader) {
+      isAtomSection = true;
+    } else if (elem === bondHeader) {
+      isAtomSection = false;
+    } else if (isAtomSection) {
+      // @ts-ignore
+      let label = elem.match(/[A-Za-z]+/)[0] // get the first alphabetic sequence
+      let coords = elem.match(/[+-]?[0-9]*[.][0-9]+/g) // get all floats
+      // @ts-ignore
+      // first three values are the x, y, z coordinates
+      let coordinate = new Coordinate(Number(coords[0]), Number(coords[1]), Number(coords[2]));
+
+      // add label to viewer
+      viewer.addLabel(label, {position:coordinate, alignment:"center", frame:0,
+        showBackground:false, fontSize:8, fontColor:'black', fontOpacity:1})
+    }
+  });
+}
+
+class Coordinate {
+  public readonly x: number;
+  public readonly  y: number;
+  public readonly  z: number;
+
+  constructor(x: number, y: number, z: number) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
   }
 }
