@@ -25,7 +25,7 @@ let skillsMD = `
 
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
 
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, Sass, JavaScript, TypeScript, Angular (framework)
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, Angular (framework), Vue (framework)
   `
 let courseworkMD = `
   **Computer Science**:
