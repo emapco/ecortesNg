@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ResumeCard, cards} from "../../pages/resume";
+import {ResumeCard, cards} from "../../../pages/resume";
 
 @Component({
   selector: 'app-sidebar',

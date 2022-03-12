@@ -14,7 +14,7 @@ let educationMD = `
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   Associate of Science, Computer Science (in progress)<br>
   May 2022<br>
-  GPA: 3.901/4.000<br>
+  GPA: 3.901/4.000
 
   Certificate of achievement: Computer science - Advanced C++ programming<br>
   Obtained July 2021<br>
@@ -25,7 +25,9 @@ let skillsMD = `
 
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
 
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, Angular (framework), Vue (framework)
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript
+
+  **Web Frameworks**: Angular CLI,  Vue.js
   `
 let courseworkMD = `
   **Computer Science**:
@@ -36,6 +38,8 @@ let courseworkMD = `
   - Program Design and Data Structures (C++)
   - Assembly Language & Computer Organization
   - Amazon AWS Cloud Foundations
+  - Unix and Linux
+  - Computer Networking
 
   **Chemistry**:
   - General Chemistry
