@@ -27,7 +27,7 @@ let skillsMD = `
 
   **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript
 
-  **Web Frameworks**: Angular CLI,  Vue.js
+  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS
   `
 let courseworkMD = `
   **Computer Science**:
