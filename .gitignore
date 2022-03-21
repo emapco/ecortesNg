@@ -2,6 +2,7 @@
 *.json
 !spec/*.json
 /karma.conf.js
+/*.js
 /.editorconfig
 /.browserslistrc
 /.angular

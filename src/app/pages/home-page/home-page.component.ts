@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ResumeCard, cards} from "../resume";
 
 @Component({
   selector: 'app-home-page',
@@ -7,7 +6,6 @@ import {ResumeCard, cards} from "../resume";
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  resumeCards: ResumeCard[] = cards;
   constructor() { }
 
   ngOnInit(): void {

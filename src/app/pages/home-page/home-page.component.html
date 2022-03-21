@@ -1,7 +1,30 @@
-<mat-card *ngFor="let card of resumeCards" [attr.id]="card.link_anchor">
-  <mat-card-title><u>{{card.title}}</u></mat-card-title>
+<img src="../../../assets/img/headshot.jpg"
+     alt="Headshot photo of Emmanuel Cortes">
+<mat-card class="text-div">
   <mat-card-content>
-    <markdown [data]="card.content"></markdown>
+    <p class="first-letter">
+      Hello, I'm Emmanuel Cortes. I am looking for a job opportunity in data analysis,
+      software development, and/or chemistry.
+    </p>
+    <p>
+      I graduated from UC Berkeley in 2020 with a B.S. in chemistry. Since then,
+      I have worked towards an A.S. in computer science.
+    </p>
+    <p>
+      Recently, I was admitted to a part-time multidisciplinary master of science program
+      called Molecular Science and Software Engineering (MSSE). The program is offered by UC Berkeley's
+      College of Chemistry and College of Engineering. The program is unique since it combines computational
+      science, software engineering, and data science.
+    </p>
+    <p>
+      My hobbies include playing the piano, reading, learning new web technologies,
+      and playing tactical shooters.
+    </p>
   </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent"
+            routerLink="/resume" routerLinkActive="active">
+      Resume
+    </button>
+  </mat-card-actions>
 </mat-card>
-
