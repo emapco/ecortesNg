@@ -7,7 +7,7 @@
     </mat-expansion-panel-header>
     <mat-nav-list>
       <mat-list-item *ngFor="let card of resumeCards"
-                     routerLink="/" routerLinkActive="active" [fragment]="card.link_anchor">
+                     routerLink="/resume" routerLinkActive="active" [fragment]="card.link_anchor">
         {{card.nav_title}}
       </mat-list-item>
     </mat-nav-list>

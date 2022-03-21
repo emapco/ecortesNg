@@ -7,6 +7,7 @@ import {PathVisualizerPageComponent} from "./path-visualizer-page/path-visualize
 import { OatResearchPageComponent } from './research-page/oat-research-page.component';
 import { MolViewerComponent } from '../components/mol-viewer/mol-viewer.component';
 import { BoraneResearchPageComponent } from './research-page/borane-research-page.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BoraneResearchPageComponent } from './research-page/borane-research-pag
     OatResearchPageComponent,
     MolViewerComponent,
     BoraneResearchPageComponent,
+    ResumePageComponent,
   ],
   imports: [
     SharedModule,

@@ -5,12 +5,17 @@ import {PathVisualizerPageComponent} from "../pages/path-visualizer-page/path-vi
 import {HomePageComponent} from "../pages/home-page/home-page.component";
 import {OatResearchPageComponent} from "../pages/research-page/oat-research-page.component";
 import {BoraneResearchPageComponent} from "../pages/research-page/borane-research-page.component";
+import {ResumePageComponent} from "../pages/resume-page/resume-page.component";
 
 const routes: Routes = [
   {
     path: '',
     component: HomePageComponent,
     pathMatch: 'full',
+  },
+  {
+    path: 'resume',
+    component: ResumePageComponent,
   },
   {
     path: 'pathfindingVisualizer',
