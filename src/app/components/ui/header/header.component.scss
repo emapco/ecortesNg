@@ -1,7 +1,7 @@
 mat-nav-list {
   display: flex;
   flex-flow: row nowrap;
-  height: 3rem;
+  height: auto;
   margin: 0;
   padding-top: 0;
 }
@@ -11,8 +11,4 @@ mat-nav-list {
   flex-flow: row nowrap;
   position: absolute;
   right: 0;
-}
-
-mat-icon {
-  transform: scale(1);
 }

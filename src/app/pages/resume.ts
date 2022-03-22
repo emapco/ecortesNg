@@ -1,3 +1,9 @@
+/**
+ * link_anchor: Anchor for sidebar navigation
+ * nav_title: Title for sidebar navigation
+ * title: Card title
+ * content: Card content
+ */
 export interface ResumeCard {
   link_anchor: string;
   nav_title: string;
@@ -74,12 +80,12 @@ let labsMD = `
 let jobsMD = `
   **John Arnold Group (Berkeley, CA)** <br>
   *Undergraduate Student Researcher (July 2018 - July 2020)*<br>
-  Applied quantum chemistry software (Gaussian, Q-Chem, and Multiwfn) to calculate the thermodynamics, electronic structures, and reaction mechanisms of inorganic compounds.
+  * Applied quantum chemistry software (Gaussian, Q-Chem, and Multiwfn) to calculate the thermodynamics, electronic structures, and reaction mechanisms of inorganic compounds.
   Research provided theoretical insight into the factors giving rise to the compounds' reactivity.
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   *Chemistry Peer Tutor (Aug. 2017 - May 2018)*<br>
-  Assisted peers with general chemistry concepts/questions.
+  * Assisted peers with general chemistry concepts/questions.
 
   **Textmunication (Pleasant Hill, CA)**<br>
   *System Administrator (July 2014 - Oct. 2015)*<br>

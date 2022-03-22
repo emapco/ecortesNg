@@ -1,15 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
-  height: 100%;
-}
-
 body {
+  height: 100%;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 p {
-  font-size: 18px;
+  @apply text-base;
 }
 
 h1 {
@@ -33,25 +29,15 @@ markdown p strong {
   font-weight: 500;
 }
 
-markdown p {
-  padding: 0 0 !important;
-  margin: 0 0;
-}
-
 /**********************************
   Material Angular Component styles
 ***********************************/
-mat-expansion-panel-header {
-  height: 5vh !important;
-  margin: .5vh 0;
-}
-
 mat-card {
-     margin: 12px 0;
+  margin: 1.5em 0;
 }
 
 mat-icon {
-  transform: scale(.75);
+  transform: scale(1);
 }
 
 mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {

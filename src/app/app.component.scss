@@ -1,10 +1,14 @@
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  color: #333;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container, .sidenav {
+  padding-top: 3rem;
+  min-height: 100vh;
 }
 
 .sidenav {
@@ -18,23 +22,8 @@ app-header {
   opacity: 1;
 }
 
-.app-container, .sidenav {
-  padding-top: 3rem;
-  min-height: 100vh;
-}
-
-.app-container {
-  width: 100%;
-  padding: 3.5em 0;
-}
-
 .content {
-  height: 100%;
-  display: flex;
-  margin: auto;
-  padding: 0 16px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0 .01rem;
+  @apply flex flex-col justify-center items-center;
 }
 

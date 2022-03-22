@@ -1,10 +1,7 @@
 mat-card {
-  width: 60% !important;
+  @apply w-5/6 sm:w-4/6 md:w-3/5;
 }
 
 :host {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-col flex-nowrap justify-center items-center
 }

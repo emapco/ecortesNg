@@ -4,7 +4,6 @@
 @use 'assets/styles/partials/theme';
 @include mat.core();
 
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -19,7 +18,3 @@
   @include app.theme(theme.$dark-theme);
 }
 
-.light-theme {
-  @include mat.all-component-themes(theme.$light-theme);
-  @include app.theme(theme.$light-theme);
-}
