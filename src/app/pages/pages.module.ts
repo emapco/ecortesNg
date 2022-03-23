@@ -8,6 +8,7 @@ import { OatResearchPageComponent } from './research-page/oat-research-page.comp
 import { MolViewerComponent } from '../components/mol-viewer/mol-viewer.component';
 import { BoraneResearchPageComponent } from './research-page/borane-research-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
     MolViewerComponent,
     BoraneResearchPageComponent,
     ResumePageComponent,
+    ProjectsPageComponent,
   ],
   imports: [
     SharedModule,

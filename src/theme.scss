@@ -4,9 +4,6 @@
 @use 'assets/styles/partials/theme';
 @include mat.core();
 
-@tailwind components;
-@tailwind utilities;
-
 // Include the default theme styles.
 // include component mixins here
 @include mat.all-component-themes(theme.$light-theme);

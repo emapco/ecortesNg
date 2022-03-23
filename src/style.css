@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind components;
+@tailwind utilities;
+
 body {
   height: 100%;
   margin: 0;
@@ -34,6 +37,7 @@ markdown p strong {
 ***********************************/
 mat-card {
   margin: 1.5em 0;
+  @apply w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5;
 }
 
 mat-icon {
@@ -42,4 +46,21 @@ mat-icon {
 
 mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {
   color: white !important;
+}
+
+button {
+  @apply bg-gradient-to-r hover:from-secondary hover:via-blue-700 hover:to-secondary;
+}
+
+/**********************************
+  Tailwind CSS Layout Util Classes
+***********************************/
+@layer utilities {
+  .flex-col-center {
+    @apply flex flex-col flex-nowrap justify-center items-center;
+  }
+
+  .flex-row-center {
+    @apply flex flex-row flex-nowrap justify-center items-center;
+  }
 }

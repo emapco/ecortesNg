@@ -1,12 +1,5 @@
-:host {
-  width: 70%;
-}
-
 :host, div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-col flex-nowrap justify-center items-center;
 }
 
 img {
