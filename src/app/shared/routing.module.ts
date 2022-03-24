@@ -6,6 +6,7 @@ import {HomePageComponent} from "../pages/home-page/home-page.component";
 import {OatResearchPageComponent} from "../pages/research-page/oat-research-page.component";
 import {BoraneResearchPageComponent} from "../pages/research-page/borane-research-page.component";
 import {ResumePageComponent} from "../pages/resume-page/resume-page.component";
+import {ProjectsPageComponent} from "../pages/projects-page/projects-page.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'resume',
     component: ResumePageComponent,
+  },
+  {
+    path: 'projects',
+    component: ProjectsPageComponent,
   },
   {
     path: 'pathfindingVisualizer',
