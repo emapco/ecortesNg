@@ -6,3 +6,8 @@ img {
 a {
   padding-left: .5rem;
 }
+
+.video {
+  @apply w-full
+  border border-transparent shadow-sm;
+}
