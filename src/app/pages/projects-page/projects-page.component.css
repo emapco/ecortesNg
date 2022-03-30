@@ -1,6 +1,5 @@
 img {
-  @apply w-3/5 md:w-2/5 lg:w-2/5
-  border border-transparent shadow-sm;
+  @apply w-full shadow-sm;
 }
 
 a {
@@ -8,6 +7,5 @@ a {
 }
 
 .video {
-  @apply w-full
-  border border-transparent shadow-sm;
+  @apply w-full shadow-sm;
 }
