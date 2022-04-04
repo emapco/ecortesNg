@@ -47,9 +47,25 @@
       <br />
       <p>
         ValInformer is an Ionic/Vue progressive web app orientented around the
-        video game, Valorant. The app features patch notes, a news feed and a
-        lineup database.
+        video game, Valorant. The app features patch notes, development updates,
+        a news feed and a lineup database.
       </p>
+      <p>A bit about the backend:</p>
+      <ul>
+        <li>
+          Statically hosted files are encoded (brotli) to ensure the smallest
+          amount of data is transferred. 
+        </li>
+        <li>
+          Images are programmatically retrieved
+          depending on the device's screen size ensuring the images are sufficiently large.
+        </li>
+        <li>
+          An API Gateway HTTP API was created to circumvent
+          restrictive <abbr title="Cross-Origin Resource Sharing">CORS</abbr> policies. The API invokes an AWS Lambda function which fetches an RSS feed from a URL (that is
+          passed as a parameter) and returns the feed in the API response.
+        </li>
+      </ul>
     </mat-card-content>
     <mat-card-actions>
       <a href="/val/">

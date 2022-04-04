@@ -9,3 +9,7 @@ a {
 .video {
   @apply w-full shadow-sm;
 }
+
+li {
+  @apply text-base;
+}
