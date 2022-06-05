@@ -11,6 +11,16 @@ export interface ResumeCard {
   content: string;
 }
 
+let awardsCertsMD = `
+**George C. Pimentel Award**<br>
+UC Berkeley, College of Chemistry<br>
+Awarded May 2020
+
+**Certificate of achievement: Computer science - Advanced C++ programming**<br>
+Diablo Valley College<br>
+Obtained July 2021<br>
+GPA: 4.000/4.000 (certificate coursework)
+`
 let educationMD = `
   **UC Berkeley (Berkeley, CA)** <br>
   Bachelor of Science, Chemistry (Honors in General Scholarship)<br>
@@ -19,21 +29,17 @@ let educationMD = `
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   Associate of Science, Computer Science (in progress)<br>
-  May 2022<br>
+  Graduated May 2022<br>
   GPA: 3.901/4.000
-
-  Certificate of achievement: Computer science - Advanced C++ programming<br>
-  Obtained July 2021<br>
-  GPA: 4.000/4.000 (certificate coursework)
   `
 let skillsMD = `
-  **Personal**: Problem solver, analytical thinker, eager to learn
+  **Personal**: Problem solver, eager to learn, goal oriented
 
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
 
   **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript
 
-  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS
+  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS, Flask
   `
 let courseworkMD = `
   **Computer Science**:
@@ -144,4 +150,10 @@ export const cards: ResumeCard[] = [
     title: 'Research Publications',
     content: researchMD
   },
+  {
+    link_anchor: 'awards',
+    nav_title: 'Awards and Certificates',
+    title: 'Awards and Certificates',
+    content: awardsCertsMD
+  }
 ]

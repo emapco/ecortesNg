@@ -54,16 +54,18 @@
       <ul>
         <li>
           Statically hosted files are encoded (brotli) to ensure the smallest
-          amount of data is transferred. 
+          amount of data is transferred.
         </li>
         <li>
-          Images are programmatically retrieved
-          depending on the device's screen size ensuring the images are sufficiently large.
+          Images are programmatically retrieved depending on the device's screen
+          size ensuring the images are sufficiently large.
         </li>
         <li>
-          An API Gateway HTTP API was created to circumvent
-          restrictive <abbr title="Cross-Origin Resource Sharing">CORS</abbr> policies. The API invokes an AWS Lambda function which fetches an RSS feed from a URL (that is
-          passed as a parameter) and returns the feed in the API response.
+          An API Gateway HTTP API was created to circumvent restrictive
+          <abbr title="Cross-Origin Resource Sharing">CORS</abbr> policies. The
+          API invokes an AWS Lambda function which fetches an RSS feed from a
+          URL (that is passed as a parameter) and returns the feed in the API
+          response.
         </li>
       </ul>
     </mat-card-content>
@@ -72,6 +74,57 @@
         <button mat-raised-button color="accent">Live demo</button>
       </a>
       <a href="https://github.com/emapco/valorant-news-lineups" target="_blank">
+        <button mat-raised-button color="accent">
+          Source code
+          <mat-icon>launch</mat-icon>
+        </button>
+      </a>
+    </mat-card-actions>
+    <!-- Digit Classifier -->
+  </mat-card>
+  <!-- Digit classifier -->
+  <mat-card>
+    <mat-card-title><u>Digit Classifier API</u></mat-card-title>
+    <mat-card-subtitle
+      >Flask, Python 3, Scikit-learn, Vue3, TypeScript</mat-card-subtitle
+    >
+    <mat-card-content>
+      <div class="flex-row-center">
+        <img
+          alt="Machine learning api frontend client"
+          src="/assets/images/ml_api_client.png"
+        />
+      </div>
+      <br />
+      <p>
+        K nearest neighbors classification and random forest classification
+        models were trained using the MNIST digits classification dataset.
+      </p>
+      <p>
+        The models were implemented in python 3 using the scikit-learn library. In particular, the KNeighborsClassifier and RandomForestClassifier classes were used.
+      </p>
+      <p>
+        These two models were chosen since they were the best performing (the highest scores against the test dataset) out of the four models tested. Afterwards, the two models' hyperparameters were fined tuned using the GridSearchCV class.
+      </p><br>
+      <p>
+        To deploy the models, I created an API with flask that receives
+        images and returns the model's prediction and probabilities.
+      </p>
+      <p>
+        I then developed a frontend with Vue.js to interface with the API. The
+        frontend has a drawing canvas where the user can draw a digit and request the API for a prediction.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!--
+      <a href="/">
+        <button mat-raised-button color="accent">Live demo</button>
+      </a>
+      -->
+      <a
+        href="https://github.com/emapco/DigitClassificationAPI"
+        target="_blank"
+      >
         <button mat-raised-button color="accent">
           Source code
           <mat-icon>launch</mat-icon>
