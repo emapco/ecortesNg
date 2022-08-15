@@ -23,6 +23,11 @@ GPA: 4.000/4.000 (certificate coursework)
 `
 let educationMD = `
   **UC Berkeley (Berkeley, CA)** <br>
+  Master of Science, Molecular Science and Software Engineering<br>
+  August 2022 - Present<br>
+  GPA: 3.807/4.000
+
+  **UC Berkeley (Berkeley, CA)** <br>
   Bachelor of Science, Chemistry (Honors in General Scholarship)<br>
   Graduated May 2020<br>
   GPA: 3.807/4.000
@@ -35,11 +40,11 @@ let educationMD = `
 let skillsMD = `
   **Personal**: Problem solver, eager to learn, goal oriented
 
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, jQuery
+
+  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS, Flask, Shopify
+
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
-
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript
-
-  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS, Flask
   `
 let courseworkMD = `
   **Computer Science**:
@@ -84,6 +89,10 @@ let labsMD = `
   * Lab covered various physical chemistry topics (FT-IR, NMR, XRPD, bomb calorimetry).
   `
 let jobsMD = `
+  **Wear Good (Walnut Creek, CA)**<br>
+  *Frontend Engineer Intern (June 2022 - Present)*<br>
+
+
   **John Arnold Group (Berkeley, CA)** <br>
   *Undergraduate Student Researcher (July 2018 - July 2020)*<br>
   * Applied quantum chemistry software (Gaussian, Q-Chem, and Multiwfn) to calculate the thermodynamics, electronic structures, and reaction mechanisms of inorganic compounds.
