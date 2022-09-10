@@ -25,24 +25,23 @@ let educationMD = `
   **UC Berkeley (Berkeley, CA)** <br>
   Master of Science, Molecular Science and Software Engineering<br>
   August 2022 - Present<br>
-  GPA: 3.807/4.000
 
   **UC Berkeley (Berkeley, CA)** <br>
   Bachelor of Science, Chemistry (Honors in General Scholarship)<br>
   Graduated May 2020<br>
-  GPA: 3.807/4.000
+  GPA: 3.8/4.0
 
   **Diablo Valley College (Pleasant Hill, CA)**<br>
   Associate of Science, Computer Science (in progress)<br>
   Graduated May 2022<br>
-  GPA: 3.901/4.000
+  GPA: 3.9/4.0
   `
 let skillsMD = `
   **Personal**: Problem solver, eager to learn, goal oriented
 
-  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, jQuery
+  **Programming Languages**: Python, C++, SQL, HTML, CSS, SCSS, JavaScript, TypeScript, jQuery, Liquid (markup language)
 
-  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS, Flask, Shopify
+  **Web Frameworks**: Angular, Vue 3, Ionic, Tailwind CSS, Flask, Express, Shopify
 
   **Experimental Techniques**: UV/VIS absorption/emission, FT-IR, NMR, XRPD, titrations (acid-base, potentiometric), GC, GCMS, bomb calorimetry, ICP-AES, TLC, Distillation
   `
@@ -90,8 +89,14 @@ let labsMD = `
   `
 let jobsMD = `
   **Wear Good (Walnut Creek, CA)**<br>
-  *Frontend Engineer Intern (June 2022 - Present)*<br>
-
+  *Frontend Engineer Intern (June 2022 - August 2022)*<br>
+  * I lead a campaign to improve site performance. I benchmarked different test/changes, statistically analyzed the
+  results, and then implemented the significant changes to the live site. Shopify speed score improved by a
+  factor of 2.5.
+  * I researched, proposed, and implemented a blog flow on their Shopify site. I started by researching competitors’
+  blogs noting UX features like navigation and responsiveness. Then from my observations I designed
+  wireframes of different blog page and blog article layouts for both desktop and mobile.
+  * I resolved UI/UX issues using jQuery and/or Liquid.
 
   **John Arnold Group (Berkeley, CA)** <br>
   *Undergraduate Student Researcher (July 2018 - July 2020)*<br>
