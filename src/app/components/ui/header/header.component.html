@@ -1,12 +1,13 @@
 <mat-nav-list>
   <section>
-    <mat-list-item (click)="menuToggled.emit()">
+    <mat-list-item class="md:!hidden" (click)="menuToggled.emit()">
       <mat-icon>menu</mat-icon>
     </mat-list-item>
   </section>
   <section>
     <mat-list-item routerLink="" routerLinkActive="active">Emmanuel Cortes</mat-list-item>
   </section>
+  <app-accordion-content [hideToggle]="true" [openAll]="true" class="hidden md:flex"></app-accordion-content>
   <section class="right-side">
     <a href="https://www.linkedin.com/in/mannycortes/">
       <mat-list-item>

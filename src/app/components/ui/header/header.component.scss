@@ -6,6 +6,12 @@ mat-nav-list {
   padding: 0;
 }
 
+mat-accordion {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
 .right-side {
   display: flex;
   flex-flow: row nowrap;

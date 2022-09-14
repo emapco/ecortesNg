@@ -1,0 +1,8 @@
+mat-nav-list, mat-expansion-panel, mat-accordion {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+mat-nav-list {
+  width: 120% !important;
+}

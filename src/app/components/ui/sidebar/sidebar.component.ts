@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ResumeCard, cards} from "../../../pages/resume";
 
 @Component({
   selector: 'app-sidebar',
@@ -8,7 +7,6 @@ import {ResumeCard, cards} from "../../../pages/resume";
 })
 export class SidebarComponent implements OnInit {
   currentYear: number = new Date().getFullYear();
-  resumeCards: ResumeCard[] = cards;
 
   constructor() {
   }
