@@ -5,11 +5,12 @@ import {SharedModule} from "./shared/shared.module";
 import {CoreModule} from "./core/core.module";
 import {UiModule} from "./components/ui/ui.module";
 import {PagesModule} from "./pages/pages.module";
-
+import {ParticlesDirective} from "./directives/particles.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
+    ParticlesDirective,
   ],
   imports: [
     SharedModule,

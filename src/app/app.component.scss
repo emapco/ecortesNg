@@ -7,8 +7,19 @@
 }
 
 .app-container, .sidenav {
-  padding-top: 3rem;
+  padding-top: 2rem;
   min-height: 100vh;
+  z-index: 101;
+}
+
+.app-container {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .sidenav {
@@ -18,7 +29,7 @@
 app-header {
   width: 100%;
   position: fixed;
-  z-index: 101;
+  z-index: 102;
   opacity: 1;
 }
 
@@ -26,3 +37,11 @@ app-header {
   padding: 0 .01rem;
 }
 
+.particles-wrapper {
+  width: 100%;
+  height: auto;
+  background: #303030;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}

@@ -37,7 +37,7 @@ markdown p strong {
 ***********************************/
 mat-card {
   margin: 1.5em 0;
-  background-color: rgba(66,66,66,0.85) !important;
+  background-color: rgba(66,66,66,0.87) !important;
   @apply w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5;
 }
 

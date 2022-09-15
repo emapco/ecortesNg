@@ -1,5 +1,5 @@
 img {
-  @apply w-1/2
+  @apply w-8/12 sm:w-6/12
   rounded-full border border-transparent shadow-sm;
 }
 
@@ -10,4 +10,8 @@ img {
 
 .rsbutton {
   margin: 0 !important;
+}
+
+:host {
+  @apply h-auto md:h-[calc(100vh-36px)];
 }
