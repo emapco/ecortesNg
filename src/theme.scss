@@ -6,12 +6,8 @@
 
 // Include the default theme styles.
 // include component mixins here
-@include mat.all-component-themes(theme.$light-theme);
-@include app.theme(theme.$light-theme);
 
-// Include the alternative theme styles inside of a block with a CSS class.
-.dark-theme {
-  @include mat.all-component-themes(theme.$dark-theme);
-  @include app.theme(theme.$dark-theme);
-}
+@include mat.all-component-themes(theme.$dark-theme);
+@include app.theme(theme.$dark-theme);
+
 

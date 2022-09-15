@@ -1,14 +1,17 @@
-<mat-nav-list>
-  <section>
+<mat-nav-list class="!flex flex-row flex-nowrap h-auto m-0 !p-0">
+  <div>
     <mat-list-item class="md:!hidden" (click)="menuToggled.emit()">
       <mat-icon>menu</mat-icon>
     </mat-list-item>
-  </section>
-  <section>
+  </div>
+
+  <div>
     <mat-list-item routerLink="" routerLinkActive="active">Emmanuel Cortes</mat-list-item>
-  </section>
+  </div>
+
   <app-accordion-content [hideToggle]="true" [openAll]="true" class="hidden md:flex"></app-accordion-content>
-  <section class="right-side">
+
+  <div class="flex flex-row ml-auto">
     <a href="https://www.linkedin.com/in/mannycortes/">
       <mat-list-item>
         <mat-icon svgIcon="linkedin" matTooltip="LinkedIn"></mat-icon>
@@ -19,10 +22,6 @@
         <mat-icon svgIcon="github" matTooltip="GitHub"></mat-icon>
       </mat-list-item>
     </a>
-    <mat-list-item (click)="toggleMode()">
-      <mat-icon *ngIf="!lightMode" matTooltip="Switch to light mode">light_mode</mat-icon>
-      <mat-icon *ngIf="lightMode" matTooltip="Switch to night mode">dark_mode</mat-icon>
-    </mat-list-item>
-  </section>
+  </div>
 </mat-nav-list>
-<mat-divider></mat-divider>
+<mat-divider class="mt-1 z-[105]"></mat-divider>
