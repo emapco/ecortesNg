@@ -1,13 +1,15 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, Input, OnDestroy, ViewChild} from '@angular/core';
 import {cards, ResumeCard} from "../../../pages/resume";
 import {MatAccordion} from "@angular/material/expansion";
+import * as $ from "jquery";
+import ClickEvent = JQuery.ClickEvent;
 
 @Component({
   selector: 'app-accordion-content',
   templateUrl: './accordion-content.component.html',
   styleUrls: ['./accordion-content.component.css']
 })
-export class AccordionContentComponent implements OnInit {
+export class AccordionContentComponent implements AfterViewInit, OnDestroy {
   @Input() openAll: boolean = false;
   @Input() hideToggle: boolean = false;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
@@ -18,7 +20,22 @@ export class AccordionContentComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit() {
+    // proxy value to distinguish header accordion
+    if (this.hideToggle) {
+      $(document).on("click", (e: ClickEvent) => {
+        let headerTag = $('#header');
+        if (!headerTag.is(e.target) && !headerTag.has(e.target).length) {
+          this.accordion?.closeAll();
+        }
+      });
+    }
+  }
+
+  ngOnDestroy() {
+    if (this.hideToggle) {
+      $(document).off("click");
+    }
   }
 
   onToggle(): void {
