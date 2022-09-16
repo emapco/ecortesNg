@@ -6,6 +6,10 @@ import {CoreModule} from "./core/core.module";
 import {UiModule} from "./components/ui/ui.module";
 import {PagesModule} from "./pages/pages.module";
 import {ParticlesDirective} from "./directives/particles.directive";
+import {AppRoutingModule} from "./app-routing.module";
+import {BrowserModule} from "@angular/platform-browser";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import {ParticlesDirective} from "./directives/particles.directive";
     ParticlesDirective,
   ],
   imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
     SharedModule,
-    CoreModule,
-    UiModule,
-    PagesModule,
+    CoreModule,  // mol-data service and cookies service
+    UiModule,  // header, footer, and menu accordion-content
+    PagesModule,  // home, resume, 404 page
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })

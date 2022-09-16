@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
 import {MarkdownService} from "ngx-markdown";
 import {MolDataService} from "./mol-data.service";

@@ -8,17 +8,6 @@ p {
   padding: .5em 0;
 }
 
-figure {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-mat-card {
-  width: 60% !important;
-}
-
 svg {
   -webkit-touch-callout: none;
   -webkit-user-select: none;

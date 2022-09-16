@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {cards, ResumeCard} from "../resume";
 
 @Component({
@@ -6,12 +6,9 @@ import {cards, ResumeCard} from "../resume";
   templateUrl: './resume-page.component.html',
   styleUrls: ['./resume-page.component.css']
 })
-export class ResumePageComponent implements OnInit {
+export class ResumePageComponent {
   resumeCards: ResumeCard[] = cards;
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor() {
   }
-
-
 }
