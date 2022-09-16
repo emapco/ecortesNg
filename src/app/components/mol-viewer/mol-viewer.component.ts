@@ -51,8 +51,16 @@ export class MolViewerComponent implements OnInit {
     viewer.zoomTo();
     viewer.render();
 
+    // determine appropriate canvas width depending on window size
+    let aspect_ratio = window.innerWidth / window.innerHeight;
+    let c_width = 352;
+    if (window.innerWidth > 560) {
+      c_width = window.innerWidth / 2;
+    }
+
     // set innerWidth otherwise WebGL canvas width is indeterminate
-    displayElement.innerWidth(352);
+    displayElement.innerWidth(c_width);
+    displayElement.innerHeight(c_width/aspect_ratio);
   }
 }
 

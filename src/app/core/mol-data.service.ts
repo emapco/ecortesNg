@@ -8,12 +8,8 @@ export class MolDataService {
 
   constructor(private http: HttpClient) { }
 
-  async get(folder: string, file: string) {
-    return await this._httpGet(folder, file);
-  }
-
-  async _httpGet(folder: string, file: string): Promise<string> {
-    return new Promise((resolve, reject) => {
+  async get(folder: string, file: string): Promise<string> {
+    return new Promise((resolve) => {
       this.http.get(`../assets/structures/${folder}/${file}.mol2`, {
         responseType: 'text' as 'json'
       }).subscribe(data => {

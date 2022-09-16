@@ -1,11 +1,3 @@
-#container {
-  height: 45%;
-  width: 50%;
-  position: absolute;
-  justify-self: center;
-  align-self: center;
-}
-
 :host {
   height: 400px !important;
   width: 352px !important;
