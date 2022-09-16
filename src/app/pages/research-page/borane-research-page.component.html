@@ -11,39 +11,37 @@
       All three complexes (structures 1-3 shown in the image below) have
       similar geometry; each one having an oxo ligand (an atom or group of atoms that are bonded to a metal atom)
       at the apical position. Thus they are expected to have similar electronic structures.
-    </p>
-    <p>
+      <br><br>
       However, 1's Re-O bonding is significantly weaker with a Wiberg bond index (WBI) value of 1.60.
       WBI is a formalism for calculating bond strengths. Natural bond orbital (NBO) analysis shows that 1's Re-O
       contains two bonds as opposed to three bonds present in structures 2 and 3.
       The weakened bond is also reflected in the natural population analysis (NPA) charges which show a more
       negatively charged and polarize oxo ligand due to it not sharing electrons with the metal center.
-    </p>
-    <p>
+      <br><br>
       The weakening of the Re-O by the addition of the imido group (NPh) is an example of π-loading. π-loading is the
       incorporation of ligands with strong double or triple bonds that help saturate the metal's d orbitals.
       Thus, for Re to facilitate the extra electrons from the NPh ligand in 1, it must weaken its Re-O bond.
     </p>
-    <div class="w-full flex-row-center">
-      <img width="420" height="284" alt="electronic charges for various rhenium complexes"
-           src="../../../assets/structures/images/charges.svg">
-    </div>
+    <figure class="flex-col-center">
+      <img class="w-full max-w-2xl" alt="electronic charges for various rhenium complexes"
+           src="../../../assets/images/charges.svg">
+    </figure>
     <p>
       I was able to identify a canonical MO (molecular orbital) which contains Re-O π-bonding characteristics
       (HOMO-16) and a MO with Re-O anti-bonding characteristics (HOMO-1) similar to the lone pair shown in the NBO
       images below.
       The HOMO-1 also shows π-bonding characteristics between the Re and imido ligand.
     </p>
-    <div class="w-full flex-row-center">
-      <figure>
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/HOMO1.png">
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/HOMO16.png">
-        <figcaption>Structure 1: HOMO-1 (top) and HOMO-16 (bottom)</figcaption>
-      </figure>
-    </div>
-    <br>
+    <figure class="flex-col-center">
+      <app-picture class="w-full max-w-2xl" [resImg]="homo1_set"
+                   alt="Highest occupied molecular oribtal 1"></app-picture>
+      <app-picture class="w-full max-w-2xl" [resImg]="homo16_set"
+                   alt="Highest occupied molecular oribtal 16"></app-picture>
+      <figcaption class="pt-2">Structure 1: HOMO-1 (top) and HOMO-16 (bottom)</figcaption>
+    </figure>
     <p>
-      From the visualized NBOs below, you can see that structures 2 and 3 have two Re-O π-bonds each (in addition to a sigma bond
+      From the visualized NBOs below, you can see that structures 2 and 3 have two Re-O π-bonds each (in addition to a
+      sigma bond
       giving them a total of 3 bonds).
       However, structure 1 only has one Re-O π-bond and a lone (electron) pair on the oxygen. The lone pair and the
       π-loaded electronic structure give rise to structure 1's unique reactivity. Structure 1 is a fascinating
@@ -52,35 +50,40 @@
     </p>
     <div class="w-full flex-col-center">
       <figure>
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/oilp.png">
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/oipi.png">
-        <figcaption>Structure 1: Lone pair (top) and π bond (bottom) NBOs</figcaption>
+        <app-picture class="w-full max-w-2xl" [resImg]="oi_lp_set"
+                     alt="oxo-imido complex's lone pair orbital "></app-picture>
+        <app-picture class="w-full max-w-2xl" [resImg]="oi_pi_set"
+                     alt="oxo-imido complex's pi orbital"></app-picture>
+        <figcaption class="pt-2">Structure 1: Lone pair (top) and π bond (bottom) NBOs</figcaption>
       </figure>
       <figure>
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/odhfpi1.png">
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/odhfpi2.png">
-        <figcaption>Structure 2: π bond NBOs</figcaption>
+        <app-picture class="w-full max-w-2xl" [resImg]="odhf_pi1_set"
+                     alt="one of oxo-dhf complex's pi orbital"></app-picture>
+        <app-picture class="w-full max-w-2xl" [resImg]="odhf_pi2_set"
+                     alt="one of oxo-dhf complex's pi orbital"></app-picture>
+        <figcaption class="pt-2">Structure 2: π bond NBOs</figcaption>
       </figure>
       <figure>
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/odcpi1.png">
-        <img width="420" height="284" alt="" src="../../../assets/structures/images/odcpi2.png">
-        <figcaption>Structure 3: π bond NBOs</figcaption>
+        <app-picture class="w-full max-w-2xl" [resImg]="odc_pi1_set"
+                     alt="one of oxo-cl complex's pi orbital"></app-picture>
+        <app-picture class="w-full max-w-2xl" [resImg]="odc_pi2_set"
+                     alt="one of oxo-cl complex's pi orbital"></app-picture>
+        <figcaption class="pt-2">Structure 3: π bond NBOs</figcaption>
       </figure>
     </div>
-    <br>
     <h2><u>Borane Activation Reaction Mechanism Research</u></h2>
     <p>
       Trevor Lohrey's reactivity studies were used as a basis for modeling the mechanistic pathway.
-      Trevor was able to isolate crystals for the starting reagent (1), the product (PD), and the intermediate product (IP)
+      Trevor was able to isolate crystals for the starting reagent (1), the product (PD), and the intermediate product
+      (IP)
       following the transition state (TS). From the isolated crystals, he was able to get
-      crystallographic data. The data was used as the starting geometries for the computations. These geometries were then
+      crystallographic data. The data was used as the starting geometries for the computations. These geometries were
+      then
       optimized and can be viewed via the diagram below.
-    </p>
-    <p>
+      <br><br>
       Trevor and I hypothesized that an adduct (structure AD in the diagram below)
       must precede the isolated intermediate product. I ultimately was able to identify the adduct structure.
-    </p>
-    <p>
+      <br><br>
       Next, I had to locate the transition state. Locating transition states is a bit of an art form since no single
       method will result in a transition state and it takes a bit of creativity to locate one.
       <br><br>
@@ -91,28 +94,32 @@
       Another method entails using your chemical intuition to model the transition state by hand and then
       run it through a transition state optimizing algorithm.
       <br><br>
-      Yet another method requires you to fix a parameter or parameters (bond length, bond angle, etc.). You then change it by small amounts while optimizing the rest of the structure. This method produces a potential energy surface (PES) that resembles a parabola with a maximum.
+      Yet another method requires you to fix a parameter or parameters (bond length, bond angle, etc.). You then change
+      it by small amounts while optimizing the rest of the structure. This method produces a potential energy surface
+      (PES) that resembles a parabola with a maximum.
       You then take the maxima structure and optimize it through a transition state optimization algorithm.
       I was successful with this method a couple of times on other projects.
       <br><br>
       The last method that I know and ultimately the one that led me to the transition state required me to animate the
-      starting compound's vibrational modes. I then had to identify which modes might lead to a transition state. Once I identified the modes, I utilized a structure
+      starting compound's vibrational modes. I then had to identify which modes might lead to a transition state. Once I
+      identified the modes, I utilized a structure
       along the animated mode and ran it through a transition state optimization algorithm.
-    </p>
-    <p>
+      <br><br>
       Once you identify a transition state, you need to verify that it contains only one imaginary vibrational mode.
       A single imaginary vibrational mode means that the structure is at a first-order saddle point along the PES.
       A structure with more than one imaginary vibration mode is a dud.
-    <p>
+      <br><br>
       Locating the transition state was the most time-consuming and challenging aspect of this project.
       Below is an animation of the transition state along its imaginary frequency vibrational mode.
     </p>
-    <figure>
-      <img mat-card-image alt="transition state animation"
-           src="../../../assets/structures/images/transitionstate.gif">
+    <figure class="flex-col-center">
+      <video [loop]="true" controls class="w-full max-w-2xl">
+        <source src="../../../assets/videos/transitionstate.webm" type="video/webm"/>
+        Your browser does not support the video tag.
+      </video>
     </figure>
     <p>Below is the reaction mechanism that I modeled.
-      You can click on each structure's diagram to view its optimized geometry.<br>
+      You can click on each structure's label to view its optimized geometry.<br><br>
       Zoom in with scroll wheel (pinch on a touch screen).<br>
       Rotate with left click and drag (touch and drag on a touch screen).<br>
       Translate with middle mouse button and drag (touch and drag with three fingers on a touch screen).
@@ -127,8 +134,8 @@
   </mat-card-actions>
 </mat-card>
 
-<div class="w-full flex-row-center">
-  <svg width="90%" height="90%" viewBox="0 0 727 449" style="background-color: #ffffffff"
+<div class="w-full flex-row-center pb-12">
+  <svg class="max-w-screen-xl" width="80%" height="80%" viewBox="0 0 727 449" style="background-color: #ffffffff"
        xmlns="http://www.w3.org/2000/svg">
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 75 122)"
           style="font:normal normal bold 200px 'Arial'">1

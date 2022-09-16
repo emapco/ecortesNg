@@ -4,12 +4,10 @@
     <mat-card-title><u>ToDoListNg</u></mat-card-title>
     <mat-card-subtitle>Angular, TypeScript, SCSS, AWS</mat-card-subtitle>
     <mat-card-content>
-      <div class="flex-row-center">
-        <img
-          alt="image of to do list web app"
-          src="/assets/images/todolist.png"
-        />
-      </div>
+      <app-picture class="w-full shadow-sm"
+                   [resImg]="todolist_set"
+                   loading="eager"
+                   alt="image of to do list web app"></app-picture>
       <br />
       <p>
         ToDoListNg is an web application for creating, reading, updating, and
@@ -89,12 +87,9 @@
       >Flask, Python 3, Scikit-learn, Vue3, TypeScript</mat-card-subtitle
     >
     <mat-card-content>
-      <div class="flex-row-center">
-        <img
-          alt="Machine learning api frontend client"
-          src="/assets/images/ml_api_client.png"
-        />
-      </div>
+      <app-picture class="w-full shadow-sm"
+                   [resImg]="ml_api_client_set"
+                   alt="Machine learning api frontend client"></app-picture>
       <br />
       <p>
         K nearest neighbors classification and random forest classification
@@ -137,12 +132,9 @@
     <mat-card-title><u>Virtual Synthesizer</u></mat-card-title>
     <mat-card-subtitle>Angular, TypeScript</mat-card-subtitle>
     <mat-card-content>
-      <div class="flex-row-center">
-        <img
-          alt="image of synthesizer web app"
-          src="/assets/images/synth.png"
-        />
-      </div>
+      <app-picture class="w-full shadow-sm"
+                   [resImg]="synth_set"
+                   alt="image of synthesizer web app"></app-picture>
       <br />
       <p>
         A synthesizer web application that can be played using a keyboard or
@@ -169,14 +161,10 @@
     <mat-card-subtitle>Angular, Ionic, TypeScript, SCSS</mat-card-subtitle>
     <mat-card-content>
       <div class="flex-col-center">
-        <div class="w-3/5 md:w-2/5 lg:w-2/5">
-          <img
-            alt="image of mobile synthesizer web app"
-            src="/assets/images/mobile-synth.jpg"
-          />
-        </div>
+        <app-picture class="w-3/5 md:w-2/5 lg:w-2/5 shadow-sm"
+                     [resImg]="mobile_synth_set"
+                     alt="image of mobile synthesizer web app"></app-picture>
       </div>
-
       <br />
       <p>
         An Ionic mobile web application port of Virtual Synthesizer. Synthesizer
@@ -205,12 +193,9 @@
       Altair</mat-card-subtitle
     >
     <mat-card-content>
-      <div class="flex-row-center">
-        <img
-          alt="image of streamlit dashboard"
-          src="/assets/images/dashboard.png"
-        />
-      </div>
+      <app-picture class="w-full shadow-sm"
+                   [resImg]="dashboard_set"
+                   alt="image of a StreamLit COVID-19 dashboard"></app-picture>
       <br />
       <p>Dashboard was created using the streamlit library.</p>
       <p>
@@ -249,19 +234,16 @@
     <mat-card-title><u>Pathfinding Algorithm Visualizer</u></mat-card-title>
     <mat-card-subtitle>Python 3.7, PyQt5</mat-card-subtitle>
     <mat-card-content>
-      <div class="flex-row-center">
-        <img
-          alt="image of python application"
-          src="/assets/images/pathfinding.png"
-        />
-      </div>
+      <app-picture class="w-full"
+                   [resImg]="pathfinding_set"
+                   alt="image of python application"></app-picture>
       <br />
       <p>
         Pathfinding Algorithm Visualizer is a desktop application built with
         Python.
       </p>
       <p>
-        On this app, you can modify a grid by adding and removing barriers.
+        In this app, you can modify a grid by adding and removing barriers.
         There are three different types of barriers that at your disposal. Two
         of which (the green and orange blocks in the image below) can have their
         weight be modified. The black barriers, however, are impenetrable.
@@ -277,7 +259,7 @@
       <button
         mat-raised-button
         color="accent"
-        routerLink="/pathfindingVisualizer"
+        routerLink="/projects/pathfindingVisualizer"
         routerLinkActive="active"
       >
         Read more

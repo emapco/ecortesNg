@@ -1,0 +1,41 @@
+<mat-card class="!flex flex-nowrap flex-col items-center mx-auto">
+  <mat-card-title><u>Pathfinding Algorithm Visualizer</u></mat-card-title>
+  <mat-card-subtitle>Python 3.7, PyQt5</mat-card-subtitle>
+  <mat-card-content>
+    <p>Pathfinding Algorithm Visualizer is a desktop application built with Python.</p>
+    <p>In this app, you can modify a grid by adding and removing barriers. There are three different types of
+      barriers that at your disposal. Two of which (the green and orange blocks in the image below) can have
+      their weight be modified. The black barriers, however, are impenetrable.</p>
+    <p>You can also specify the starting and ending locations for the path, whether to animate the
+      pathfinding algorithm and which algorithm to utilize.</p><br>
+  </mat-card-content>
+  <app-picture class="w-full"
+               [resImg]="pathfinding_set"
+               alt="image of python application"></app-picture>
+  <mat-card-content>
+    <br>
+    <p>Supported algorithms: Breadth-first search, Dijkstra, A-Star. </p>
+    <p>Starting from the starting node, the breadth-first search (BFS) algorithm visits all the children
+      in the current depth and then iterates through the children in the next level.
+      A node depth is the number of edges visited from one node to another. I visually implemented nodes as boxes
+      and edges as the shared borders.</p>
+    <p>Dijkstra's algorithm is more efficient. It utilizes a priority queue to keep track of all the nodes to visit
+      and a set containing all nodes the algorithm has visited. Instead of indiscriminately visiting nodes like BFS,
+      it visits nodes at the front of the priority queue.</p>
+    <p>This is where the weights of the barriers/nodes come into play. The priority queue contains objects containing
+      a node, a cost (sum of weights of all the nodes from the starting node to the contained node, and the path
+      (set of nodes) from the starting node to the contained. The priority queue is sorted based on the
+      lowest cost (total weight). Thus, Dijkstra's algorithm only visits nodes with the lowest cost.</p>
+    <p>A-Star algorithm is similar to Dijkstra's in terms of implementation but, A-Star uses a heuristic function that
+      modifies the cost of the nodes. I utilized the Manhattan distance as the heuristic function. The Manhattan
+      distance is the sum of the absolute differences of the different coordinates. The addition of a heuristic
+      speeds up the algorithm since it will generally visit nodes that are closer to the ending node.</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="https://github.com/emapco/PathfindingVisualizer" target="_blank">
+      <button mat-raised-button color="accent">Source code
+        <mat-icon>launch</mat-icon>
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-card>

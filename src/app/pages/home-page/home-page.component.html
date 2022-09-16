@@ -3,9 +3,11 @@
     <mat-card-content>
       <div class="bg-gradient-to-tr from-primary via-blue-200 to-primary
   overflow-hidden flex-col-center rounded-xl">
-        <img  src="https://raw.githubusercontent.com/emapco/ecortesNg/master/src/assets/images/headshot.webp" alt="Headshot photo" />
+        <app-picture class="w-8/12 lg:w-7/12 max-w-6xl rounded-full border
+                      border-transparent"
+                     [resImg]="headshot_set" loading="eager" alt="Headshot photo"></app-picture>
       </div>
-      <br />
+      <br/>
       <p>
         <span class="highlight-gradient text-5xl font-bold">H</span>ello, I'm
         <span class="highlight-gradient">Emmanuel Cortes</span>.</p>
