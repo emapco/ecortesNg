@@ -7,7 +7,7 @@
 /.browserslistrc
 /.angular
 /.vscode
-/src/environments
+/src/environments/
 
 # compiled output
 /dist

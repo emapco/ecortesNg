@@ -8,10 +8,6 @@ img {
   bg-gradient-to-r from-primary via-blue-400 to-primary;
 }
 
-.rsbutton {
-  margin: 0 !important;
-}
-
 :host {
-  @apply h-auto md:h-[calc(100vh-36px)];
+  @apply h-auto md:h-[calc(100vh-48px)];
 }

@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+  Typography
+ */
 body {
   height: 100%;
   margin: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 p {
-  @apply text-base;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -21,11 +30,41 @@ a:hover {
 }
 
 /**********************************
-  Markdown styles
+  Material Icons
+***********************************/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://ecortes.me/assets/fonts/material.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**********************************
+  Markdown Typography
 ***********************************/
 markdown, markdown p {
   font-size: 16px;
   -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
 }
 
 markdown p strong {
@@ -43,10 +82,6 @@ mat-card {
 
 mat-drawer-container {
   background-color: rgba(66,66,66,0) !important;
-}
-
-mat-icon {
-  transform: scale(1);
 }
 
 mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {

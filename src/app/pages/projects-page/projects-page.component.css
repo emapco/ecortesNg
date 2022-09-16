@@ -6,10 +6,7 @@ a {
   padding-left: .5rem;
 }
 
-.video {
-  @apply w-full shadow-sm;
-}
-
 li {
-  @apply text-base;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }

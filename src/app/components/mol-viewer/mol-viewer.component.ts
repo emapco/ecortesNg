@@ -5,13 +5,6 @@ import * as $3Dmol from '3dmol';
 import {MolDataService} from "../../core/mol-data.service";
 import {MAT_DIALOG_DATA} from "@angular/material/dialog";
 
-// @ts-ignore
-//window["$"] = $;
-// // @ts-ignore
-// window["jQuery"] = $;
-// // @ts-ignore
-// window["$3Dmol"] = $3Dmol;
-
 @Component({
   selector: 'app-mol-viewer',
   templateUrl: './mol-viewer.component.html',

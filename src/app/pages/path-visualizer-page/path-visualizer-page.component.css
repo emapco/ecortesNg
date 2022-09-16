@@ -1,7 +1,0 @@
-:host, div {
-  @apply flex flex-col flex-nowrap justify-center items-center;
-}
-
-img {
-  width: 65%;
-}

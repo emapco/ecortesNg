@@ -4,10 +4,5 @@
 @use 'assets/styles/partials/theme';
 @include mat.core();
 
-// Include the default theme styles.
-// include component mixins here
-
 @include mat.all-component-themes(theme.$dark-theme);
 @include app.theme(theme.$dark-theme);
-
-

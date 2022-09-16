@@ -1,16 +1,21 @@
-<div>
-  <div class="particles-wrapper">
+<div class="!overflow-hidden">
+  <!-- particles.js canvas -->
+  <div class="w-full h-auto absolute
+  bottom-0 z-[100] bg-[#303030]">
     <canvas repulse-particles
-            [number]="70" [speed]="5"
+            [number]="75" [speed]="animationSpeed"
             [repulseDistance]="0"
             [size]="4.5" [linkWidth]="0.75"></canvas>
   </div>
-  <app-header id="header" (menuToggled)="drawer.toggle()"></app-header>
-  <mat-drawer-container class="app-container">
-    <mat-drawer #drawer mode="side" class="sidenav">
+  <!-- webpage content -->
+  <app-header class="w-full fixed z-[102] opacity-1"
+              (menuToggled)="drawer.toggle()"></app-header>
+  <mat-drawer-container class="app-container !overflow-auto
+  pt-12 max-h-screen !z-[101] m-auto absolute inset-0">
+    <mat-drawer #drawer mode="side" class="sidenav !fixed pt-12">
       <app-sidebar></app-sidebar>
     </mat-drawer>
-    <section class="content flex-row-center" role="main">
+    <section class="!flex flex-col flex-nowrap justify-center items-center" role="main">
       <router-outlet></router-outlet>
     </section>
   </mat-drawer-container>

@@ -1,21 +1,7 @@
-.mech {
-  width: 95%;
-}
-
-.img-container {
-  width: 100%;
-}
-
-.row {
+:host {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
   align-items: center;
-}
-
-.fixed-size {
-  width: 420px;
-  height: 284px;
 }
 
 p {
@@ -42,9 +28,3 @@ svg {
   user-select: none;
 }
 
-:host {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}

@@ -24,9 +24,10 @@ export class AccordionContentComponent implements AfterViewInit, OnDestroy {
     // proxy value to distinguish header accordion
     if (this.hideToggle) {
       $(document).on("click", (e: ClickEvent) => {
-        let headerTag = $('#header');
+        let headerTag = $('#header_');
         if (!headerTag.is(e.target) && !headerTag.has(e.target).length) {
           this.accordion?.closeAll();
+          this.isOpened = false;
         }
       });
     }

@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="!flex flex-nowrap flex-col items-center">
   <mat-card-title>Borane Activation</mat-card-title>
   <mat-card-subtitle>Level of theory: DFT, wB97XD functional, mixed def2 basis set</mat-card-subtitle>
   <mat-card-content>
@@ -24,19 +24,20 @@
       incorporation of ligands with strong double or triple bonds that help saturate the metal's d orbitals.
       Thus, for Re to facilitate the extra electrons from the NPh ligand in 1, it must weaken its Re-O bond.
     </p>
-    <div class="img-container row">
-      <img class="fixed-size" alt="electronic charges for various rhenium complexes"
+    <div class="w-full flex-row-center">
+      <img width="420" height="284" alt="electronic charges for various rhenium complexes"
            src="../../../assets/structures/images/charges.svg">
     </div>
     <p>
       I was able to identify a canonical MO (molecular orbital) which contains Re-O π-bonding characteristics
-      (HOMO-16) and a MO with Re-O anti-bonding characteristics (HOMO-1) similar to the lone pair shown in the NBO images below.
+      (HOMO-16) and a MO with Re-O anti-bonding characteristics (HOMO-1) similar to the lone pair shown in the NBO
+      images below.
       The HOMO-1 also shows π-bonding characteristics between the Re and imido ligand.
     </p>
-    <div class="img-container row">
+    <div class="w-full flex-row-center">
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/HOMO1.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/HOMO16.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/HOMO1.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/HOMO16.png">
         <figcaption>Structure 1: HOMO-1 (top) and HOMO-16 (bottom)</figcaption>
       </figure>
     </div>
@@ -49,20 +50,20 @@
       compound with distinctive chemistry and is the subject of a few publications by
       my (undergraduate) research group, the John Arnold group.
     </p>
-    <div class="img-container row">
+    <div class="w-full flex-col-center">
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/oilp.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/oipi.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/oilp.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/oipi.png">
         <figcaption>Structure 1: Lone pair (top) and π bond (bottom) NBOs</figcaption>
       </figure>
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/odhfpi1.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/odhfpi2.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/odhfpi1.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/odhfpi2.png">
         <figcaption>Structure 2: π bond NBOs</figcaption>
       </figure>
       <figure>
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/odcpi1.png">
-        <img class="fixed-size" alt="" src="../../../assets/structures/images/odcpi2.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/odcpi1.png">
+        <img width="420" height="284" alt="" src="../../../assets/structures/images/odcpi2.png">
         <figcaption>Structure 3: π bond NBOs</figcaption>
       </figure>
     </div>
@@ -106,11 +107,10 @@
       Locating the transition state was the most time-consuming and challenging aspect of this project.
       Below is an animation of the transition state along its imaginary frequency vibrational mode.
     </p>
-    <div class="img-container row">
-      <figure>
-        <img mat-card-image alt="transition state animation" src="../../../assets/structures/images/transitionstate.gif">
-      </figure>
-    </div>
+    <figure>
+      <img mat-card-image alt="transition state animation"
+           src="../../../assets/structures/images/transitionstate.gif">
+    </figure>
     <p>Below is the reaction mechanism that I modeled.
       You can click on each structure's diagram to view its optimized geometry.<br>
       Zoom in with scroll wheel (pinch on a touch screen).<br>
@@ -127,19 +127,24 @@
   </mat-card-actions>
 </mat-card>
 
-<div class="mech row">
-  <svg width="85%" height="85%" viewBox="0 0 727 449" style="background-color: #ffffffff"
-       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<div class="w-full flex-row-center">
+  <svg width="90%" height="90%" viewBox="0 0 727 449" style="background-color: #ffffffff"
+       xmlns="http://www.w3.org/2000/svg">
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 75 122)"
-          style="font:normal normal bold 200px 'Arial'">1</text>
+          style="font:normal normal bold 200px 'Arial'">1
+    </text>
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 175 175)"
-          style="font:normal normal bold 200px 'Arial'">AD</text>
+          style="font:normal normal bold 200px 'Arial'">AD
+    </text>
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 320 140)"
-          style="font:normal normal bold 200px 'Arial'">TS</text>
+          style="font:normal normal bold 200px 'Arial'">TS
+    </text>
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 480 275)"
-          style="font:normal normal bold 200px 'Arial'">IP</text>
+          style="font:normal normal bold 200px 'Arial'">IP
+    </text>
     <text x="0" y="0" stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 620 240)"
-          style="font:normal normal bold 200px 'Arial'">PD</text>
+          style="font:normal normal bold 200px 'Arial'">PD
+    </text>
     <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -19 -62)"
           d="M 941.5,5484.5 L 931.5,5494.5 L 921.5,5494.5 L 921.5,4894.5 L 931.5,4894.5 L 941.5,4904.5 L 941.5,5484.5 Z "/>
     <path stroke="transparent" fill="#000000" transform="matrix(0.05 0 0 0.05 -19 -62)"
