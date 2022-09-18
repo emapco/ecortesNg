@@ -5,12 +5,12 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  animationSpeed: number = 4;
+  animationSpeed: number = 3;
 
   constructor() {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (mediaQuery.matches) {
-      this.animationSpeed = 1;
+      this.animationSpeed = 0.75;
     }
   }
 }

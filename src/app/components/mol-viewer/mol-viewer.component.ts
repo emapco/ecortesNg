@@ -1,7 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import * as $ from 'jquery';
+
 // @ts-ignore
-import * as $3Dmol from '3dmol';
+import * as $3Dmol from "3dmol/build/3Dmol-nojquery.js";
 import {MolDataService} from "../../core/mol-data.service";
 import {MAT_DIALOG_DATA} from "@angular/material/dialog";
 
@@ -27,10 +27,10 @@ export class MolViewerComponent implements OnInit {
    * @param file - mol2 file name to be displayed
    */
   async init3Dmol(folder: string, file: string): Promise<void> {
-    let displayElement = $('#container');
+    let displayElement = document.querySelector('#container');
     // get mol data from file
     let mol2Data = await this.molData.get(folder, file);
-    let config = {backgroundAlpha: 0};
+    let config = {backgroundColor: "#424242"};
 
     // create viewer on displayElement element and apply config style
     let viewer = $3Dmol.createViewer(displayElement, config);
@@ -59,7 +59,9 @@ export class MolViewerComponent implements OnInit {
     }
 
     // set innerWidth otherwise WebGL canvas width is indeterminate
+    // @ts-ignore
     displayElement.innerWidth(c_width);
+    // @ts-ignore
     displayElement.innerHeight(c_width/aspect_ratio);
   }
 }

@@ -4,5 +4,5 @@
 }
 
 :host {
-  @apply h-auto md:h-[calc(100vh-48px)];
+  @apply flex-col-center md:h-[calc(100vh-48px)];
 }

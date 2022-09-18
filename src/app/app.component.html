@@ -1,11 +1,12 @@
 <div class="!overflow-hidden">
   <!-- particles.js canvas -->
-  <div class="w-full h-auto absolute
-  bottom-0 z-[100] bg-[#303030]">
+  <div class="absolute
+  bottom-0 z-[100] bg-[#2d2d2d]">
     <canvas repulse-particles
-            [number]="75" [speed]="animationSpeed"
-            [repulseDistance]="0"
-            [size]="4.5" [linkWidth]="0.75"></canvas>
+            [number]="50" [speed]="animationSpeed"
+            [repulseDistance]="0" [bounce]="false"
+            particleHex="#3D61FF" linkHex="#3D61FF"
+            [size]="7.5" [linkWidth]="3"></canvas>
   </div>
   <!-- webpage content -->
   <app-header class="w-full fixed z-[102] opacity-1"

@@ -1,41 +1,31 @@
-import {AfterViewInit, Component, Input, OnDestroy, ViewChild} from '@angular/core';
+import {Component, HostListener, Input, ViewChild} from '@angular/core';
 import {cards, ResumeCard} from "../../../pages/resume";
 import {MatAccordion} from "@angular/material/expansion";
-import * as $ from "jquery";
-import ClickEvent = JQuery.ClickEvent;
 
 @Component({
   selector: 'app-accordion-content',
   templateUrl: './accordion-content.component.html',
   styleUrls: ['./accordion-content.component.css']
 })
-export class AccordionContentComponent implements AfterViewInit, OnDestroy {
+export class AccordionContentComponent {
   @Input() openAll: boolean = false;
   @Input() hideToggle: boolean = false;
   @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
-
   isOpened: boolean = false;
   resumeCards: ResumeCard[] = cards;
 
   constructor() {
   }
 
-  ngAfterViewInit() {
-    // proxy value to distinguish header accordion
-    if (this.hideToggle) {
-      $(document).on("click", (e: ClickEvent) => {
-        let headerTag = $('#header_');
-        if (!headerTag.is(e.target) && !headerTag.has(e.target).length) {
-          this.accordion?.closeAll();
-          this.isOpened = false;
-        }
-      });
-    }
-  }
-
-  ngOnDestroy() {
-    if (this.hideToggle) {
-      $(document).off("click");
+  @HostListener('document:click', ['$event'])
+  onClick(event: MouseEvent) {
+    if (this.hideToggle && event.target) {
+      let headerTag = document.querySelector('#header');
+      // @ts-ignore
+      if (headerTag !== event.target && (!headerTag.contains(event.target)) || event.target.innerText == "Emmanuel Cortes") {
+        this.accordion?.closeAll();
+        this.isOpened = false;
+      }
     }
   }
 
@@ -49,5 +39,4 @@ export class AccordionContentComponent implements AfterViewInit, OnDestroy {
     }
     this.isOpened = !this.isOpened;
   }
-
 }

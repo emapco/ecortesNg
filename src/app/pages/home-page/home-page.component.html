@@ -1,43 +1,42 @@
-<div class="flex-col-center h-full">
-  <mat-card class="w-5/6 md:w-4/6 !rounded-lg">
-    <mat-card-content>
-      <div class="bg-gradient-to-tr from-primary via-blue-200 to-primary
-  overflow-hidden flex-col-center rounded-xl">
-        <app-picture class="w-8/12 lg:w-7/12 max-w-6xl rounded-full border
-                      border-transparent"
-                     [resImg]="headshot_set" loading="eager" alt="Headshot photo"></app-picture>
-      </div>
-      <br/>
-      <p>
-        <span class="highlight-gradient text-5xl font-bold">H</span>ello, I'm
-        <span class="highlight-gradient">Emmanuel Cortes</span>.</p>
-      <p>
-        I'm a part-time Master's student at
-        <a href="https://msse.berkeley.edu">MSSE</a>
-        and currently looking for opportunities in software engineering or data analytics.
-      </p>
-      <p>
-        My hobbies include playing the piano, learning new web
-        technologies, programming simulations, and playing tactical shooters.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button
-        mat-raised-button
-        color="accent"
-        routerLink="/resume"
-        routerLinkActive="active"
-      >
-        Resume
-      </button>
-      <button
-        mat-raised-button
-        color="accent"
-        routerLink="/projects"
-        routerLinkActive="active"
-      >
-        Projects
-      </button>
-    </mat-card-actions>
-  </mat-card>
-</div>
+<mat-card class="w-5/6 md:w-4/6 !rounded-lg">
+  <mat-card-content>
+    <div class="bg-gradient-to-tr from-primary via-blue-200 to-primary
+overflow-hidden flex-col-center rounded-2xl">
+      <app-picture class="w-9/12 sm:w-8/12 lg:w-7/12 max-w-6xl rounded-full"
+                   [sizes]="'(min-width: 600px) 600px, (max-width: 600px) 300px'"
+                   [resImg]="headshot_set" [lazyLoad]="false"
+                   alt="Headshot photo"></app-picture>
+    </div>
+    <p class="mt-4">
+      <span class="highlight-gradient text-5xl font-bold">H</span>ello, I'm
+      <span class="highlight-gradient">Emmanuel Cortes</span>.</p>
+    <p>
+      I'm a part-time Master's student at
+      <a href="https://msse.berkeley.edu">UC Berkeley</a>
+      and currently looking for opportunities in software engineering or data analytics.
+    </p>
+    <p>
+      My hobbies include playing the piano, learning new web
+      technologies, programming simulations, and playing tactical shooters.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      color="accent"
+      routerLink="/resume"
+      routerLinkActive="active"
+    >
+      Resume
+    </button>
+    <button
+      mat-raised-button
+      color="accent"
+      routerLink="/projects"
+      routerLinkActive="active"
+    >
+      Projects
+    </button>
+  </mat-card-actions>
+</mat-card>
+

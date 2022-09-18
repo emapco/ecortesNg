@@ -8,7 +8,7 @@
 body {
   height: 100%;
   margin: 0;
-  font-size: 14px;
+  font-size: 14px !important;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,34 +27,6 @@ h1 {
 a:hover {
   color: #1976d2;
   text-decoration: none;
-}
-
-/**********************************
-  Material Icons
-***********************************/
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://ecortes.me/assets/fonts/material.woff2) format('woff2');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /**********************************
@@ -77,11 +49,12 @@ markdown p strong {
 mat-card {
   margin: 1.5em 0;
   background-color: rgba(66,66,66,0.87) !important;
-  @apply w-5/6 sm:w-3/4 md:w-4/6 max-w-[1280px];
+  max-width: 1024px !important;
+  @apply w-5/6 sm:w-3/4;
 }
 
 mat-drawer-container {
-  background-color: rgba(66,66,66,0) !important;
+  background-color: rgba(45,45,45,0) !important;
 }
 
 mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {
@@ -89,7 +62,8 @@ mat-list-item, mat-panel-title, .mat-expansion-indicator::after, app-sidebar {
 }
 
 button {
-  @apply bg-gradient-to-r hover:from-secondary hover:via-blue-700 hover:to-secondary;
+  @apply bg-gradient-to-r hover:-translate-y-px
+  hover:from-secondary hover:via-blue-700 hover:to-secondary;
 }
 
 /**********************************

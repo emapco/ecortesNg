@@ -1,10 +1,5 @@
 :host {
-  height: 400px !important;
-  width: 352px !important;
-  padding: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
 }
-
