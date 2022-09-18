@@ -10,6 +10,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     CoreModule,  // mol-data service and cookies service
     UiModule,  // header, footer, and menu accordion-content
     PagesModule,  // home, resume, 404 page
-    AppRoutingModule,
+    AppRoutingModule, ScullyLibModule,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.component";
 import {HomePageComponent} from "./pages/home-page/home-page.component";
 import {ResumePageComponent} from "./pages/resume-page/resume-page.component";
@@ -30,9 +30,11 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled',
+    scrollPositionRestoration: 'top',
     anchorScrolling: 'enabled',
-    onSameUrlNavigation: 'reload'
+    scrollOffset: [0, 64],
+    onSameUrlNavigation: 'reload',
+    preloadingStrategy: PreloadAllModules
   })],
   exports: [RouterModule]
 })
