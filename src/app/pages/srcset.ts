@@ -74,9 +74,9 @@ export const headshot_set: ResponsiveImageOutput = {
       "height": 2560
     }
   ],
-  "src": "/assets/images/headshot-1024.webp",
-  "width": 1024,
-  "height": 1365
+  "src": "/assets/images/headshot-600.webp",
+  "width": 600,
+  "height": 800
 };
 export const todolist_set: ResponsiveImageOutput = {
   "srcSet": "/assets/images/todolist-300.webp 300w,/assets/images/todolist-600.webp 600w,/assets/images/todolist-958.webp 958w",

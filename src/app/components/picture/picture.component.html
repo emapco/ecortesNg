@@ -1,21 +1,26 @@
-<picture class="grid place-items-center">
-  <source [src]="resImg.srcSet" type='image/webp' [sizes]="sizes"/>
-  <img *ngIf="loading === 'lazy'; else eager"
+<div class="grid place-items-center">
+  <img *ngIf="lazyLoad; else eager"
        [src]=resImg.src
        [srcset]=resImg.srcSet
        [sizes]="sizes"
-       [class]="class"
        [alt]="alt"
        loading="lazy"
+       [class]="class"
+       [width]="width"
+       [height]="height"
+       onload="this.removeAttribute('width');this.removeAttribute('height');"
   />
   <ng-template #eager>
     <img
       [src]=resImg.src
       [srcset]=resImg.srcSet
       [sizes]="sizes"
-      [class]="class"
       [alt]="alt"
       loading="eager"
+      [class]="class"
+      [width]="width"
+      [height]="height"
+      onload="this.removeAttribute('width');this.removeAttribute('height');"
     />
   </ng-template>
-</picture>
+</div>

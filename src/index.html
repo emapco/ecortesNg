@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Emmanuel Cortes</title>
-  <meta name="description" content="Emmanuel Cortes is a software engineer and Master's student.
-Emmanuel enjoys spending time learning new web technologies, playing videos games and writing simulations.">
+  <meta name="description"
+        content="Emmanuel Cortes is a software engineer and Master's student.
+        Emmanuel enjoys spending time learning new web technologies, playing videos games
+        and writing simulations.">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="/assets/fonts/material-icon.css" rel="stylesheet">
   <link rel="preload" as="image"
-        href="/assets/images/headshot-1024.webp"
+        href="/assets/images/headshot-300.webp"
+        media="(max-width: 600px)"
+        fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image"
+        href="/assets/images/headshot-600.webp"
+        media="(min-width: 600px)"
         fetchpriority="high" type="image/webp">
 </head>
 <body>
+  <noscript>This website requires JavaScript. Please enable for the best experience.</noscript>
   <app-root></app-root>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-B8FC5V4ZZ9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-B8FC5V4ZZ9');
-  </script>
 </body>
 </html>

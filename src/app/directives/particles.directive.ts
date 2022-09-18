@@ -2,7 +2,7 @@
 import {Directive, ElementRef, HostListener, Input, OnDestroy, OnInit} from "@angular/core";
 
 /*
-  Variables to be used outside of directive scope
+  Variables to be used outside directive scope
   To improve performance.
 */
 const TAU: number = Math.PI * 2;
@@ -95,14 +95,14 @@ export class ParticlesDirective implements OnDestroy, OnInit {
     this.resetParticles();
   }
 
-  setMousePos(x, y) {
-    mouse.x = x;
-    mouse.y = y;
-  }
-
-  stopMouse() {
-    mouse.x = null;
-  }
+  // setMousePos(x, y) {
+  //   mouse.x = x;
+  //   mouse.y = y;
+  // }
+  //
+  // stopMouse() {
+  //   mouse.x = null;
+  // }
 
   initVariables() {
     linkDistance = this.linkDistance;

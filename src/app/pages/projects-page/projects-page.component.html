@@ -4,9 +4,9 @@
     <mat-card-title><u>ToDoListNg</u></mat-card-title>
     <mat-card-subtitle>Angular, TypeScript, SCSS, AWS</mat-card-subtitle>
     <mat-card-content>
-      <app-picture class="w-full shadow-sm"
+      <app-picture class="w-full"
                    [resImg]="todolist_set"
-                   loading="eager"
+                   [lazyLoad]="false"
                    alt="image of to do list web app"></app-picture>
       <br />
       <p>
@@ -37,11 +37,13 @@
       >Ionic, Vue 3, TypeScript, Tailwind CSS</mat-card-subtitle
     >
     <mat-card-content>
-      <div class="flex-row-center">
-        <video controls class="w-full shadow-sm">
+      <figure class="flex-col-center">
+        <video controls class="w-full max-w-2xl">
+          <source src="/assets/videos/valapp.webm" type="video/webm"/>
           <source src="/assets/videos/valapp.mp4" type="video/mp4" />
+          Video of the ValInformer user interface.
         </video>
-      </div>
+      </figure>
       <br />
       <p>
         ValInformer is an Ionic/Vue progressive web app orientented around the
@@ -87,7 +89,7 @@
       >Flask, Python 3, Scikit-learn, Vue3, TypeScript</mat-card-subtitle
     >
     <mat-card-content>
-      <app-picture class="w-full shadow-sm"
+      <app-picture class="w-full"
                    [resImg]="ml_api_client_set"
                    alt="Machine learning api frontend client"></app-picture>
       <br />
@@ -132,7 +134,7 @@
     <mat-card-title><u>Virtual Synthesizer</u></mat-card-title>
     <mat-card-subtitle>Angular, TypeScript</mat-card-subtitle>
     <mat-card-content>
-      <app-picture class="w-full shadow-sm"
+      <app-picture class="w-full"
                    [resImg]="synth_set"
                    alt="image of synthesizer web app"></app-picture>
       <br />
@@ -161,7 +163,7 @@
     <mat-card-subtitle>Angular, Ionic, TypeScript, SCSS</mat-card-subtitle>
     <mat-card-content>
       <div class="flex-col-center">
-        <app-picture class="w-3/5 md:w-2/5 lg:w-2/5 shadow-sm"
+        <app-picture class="w-4/5 sm:w-8/12 md:w-3/5"
                      [resImg]="mobile_synth_set"
                      alt="image of mobile synthesizer web app"></app-picture>
       </div>
@@ -193,7 +195,7 @@
       Altair</mat-card-subtitle
     >
     <mat-card-content>
-      <app-picture class="w-full shadow-sm"
+      <app-picture class="w-full"
                    [resImg]="dashboard_set"
                    alt="image of a StreamLit COVID-19 dashboard"></app-picture>
       <br />
@@ -234,10 +236,11 @@
     <mat-card-title><u>Pathfinding Algorithm Visualizer</u></mat-card-title>
     <mat-card-subtitle>Python 3.7, PyQt5</mat-card-subtitle>
     <mat-card-content>
-      <app-picture class="w-full"
-                   [resImg]="pathfinding_set"
-                   alt="image of python application"></app-picture>
-      <br />
+      <figure class="!mx-0 md:!mx-8 lg:!mx-12">
+        <app-picture class="w-full"
+                     [resImg]="pathfinding_set"
+                     alt="image of python application"></app-picture>
+      </figure>
       <p>
         Pathfinding Algorithm Visualizer is a desktop application built with
         Python.

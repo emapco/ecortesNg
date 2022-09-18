@@ -8,12 +8,11 @@
       their weight be modified. The black barriers, however, are impenetrable.</p>
     <p>You can also specify the starting and ending locations for the path, whether to animate the
       pathfinding algorithm and which algorithm to utilize.</p><br>
-  </mat-card-content>
-  <app-picture class="w-full"
-               [resImg]="pathfinding_set"
-               alt="image of python application"></app-picture>
-  <mat-card-content>
-    <br>
+    <figure class="!mx-0 md:!mx-8 lg:!mx-12">
+      <app-picture class="w-full"
+                   [resImg]="pathfinding_set"
+                   alt="image of python application"></app-picture>
+    </figure>
     <p>Supported algorithms: Breadth-first search, Dijkstra, A-Star. </p>
     <p>Starting from the starting node, the breadth-first search (BFS) algorithm visits all the children
       in the current depth and then iterates through the children in the next level.
